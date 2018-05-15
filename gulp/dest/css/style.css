@@ -1,0 +1,55 @@
+body {
+  background: #ababab;
+  color: #333;
+  font-size: 15px; }
+
+.box-1, .box-2, .box-3 {
+  width: 100px;
+  height: 100px; }
+
+ul {
+  width: 100px;
+  height: 100px; }
+  ul li {
+    width: 50px;
+    height: 40px; }
+    span {
+      background: #ddd; }
+    ul li span {
+      background: #666; }
+  ul > li {
+    background: #666; }
+  ul:hover {
+    color: red; }
+
+.box {
+  -webkit-transition: width 8s;
+  -moz-transition: width 8s;
+  -o-transition: width 8s;
+  -ms-transition: width 8s;
+  transition: width 8s; }
+
+.box2 {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s; }
+
+@media only screen and (max-width: 480px) {
+  body {
+    color: red; } }
+
+html {
+  font-size: 10px; }
+
+.box {
+  width: 16rem;
+  height: 30rem;
+  background: #666; }
+
+.ib {
+  display: inline-block;
+  width: 1px;
+  *display: inline;
+  *zoom: 1; }

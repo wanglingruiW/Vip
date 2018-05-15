@@ -1,0 +1,134 @@
+
+//导入其他模块;
+//@import "./_reset/reset.scss";
+@import "./_common/color.scss";
+@import "./_common/mixin.scss";
+body{
+    background:$hello+-50;
+    color:$BaseC;
+    //sass是以函数作为驱动;
+    // nth 方法是获取数组中某一个项的用法;
+    // 计数是从1开始;
+    font-size: nth($fontSize,3);
+}
+//关键字的使用 用 @ 关键字;
+// @each $value in $boxList{
+//     .#{$value}{
+//         font-size: $value;
+//     }
+// }
+
+.box-1,.box-2,.box-3{
+    width:100px;
+    height: 100px;
+}
+// .box-1{
+//     background: #ddd;
+//     font-size: 10px;
+// }
+
+// @each $className,$bg,$fs in $boxList{
+//     .#{$className}{
+//         background: $bg;
+//         font-size: $fs;
+//     }
+// }  
+//高级变量的使用; @each 循环 $声明变量;
+
+//结构的定义;
+
+// ul li span,ul li strong{
+// }
+//父子级嵌套机制;;
+ul{
+    width:100px;
+    height: 100px;
+    li{
+        width: 50px;
+        height: 40px;
+        //@at-root 跳出当前的包裹;
+        @at-root span{
+            background: #ddd;
+        }
+        span{
+            background: #666;
+        }
+    }
+    &>li{
+        background: #666;
+    }
+    //&代表当前大括号的选择器;
+    &:hover{
+        color:red;
+    }
+}
+//媒体查询;
+// @media screen and (max-width:641px){
+//     .parent{
+//       color:#b6b6b6;
+//       @at-root (without:media) {
+//         .child{
+//           width:100px;
+//         }
+//       }
+//     }
+// }
+// .parent{
+//     @at-root .child &{
+//         color:#b6b6b6;
+//     }
+// }
+// @mixin transition{
+//     -webkit-transition: all .5s;
+//     -moz-transition: all .5s;
+//     -o-transition: all .5s;
+//     -ms-transition:all .5s;
+//     transition: all .5s;
+// }
+
+
+.box{
+    @include transition(width 8s);
+}
+.box2{
+    @include transition;
+}
+
+@mixin max-screen($res){
+    @media only screen and ( max-width: $res )
+    {
+      @content;
+    }
+}
+  
+@include max-screen(480px) {
+    body { color: red }
+}
+
+
+html{
+    font-size: $root;
+}
+.box{
+    width:pxToRem(160);
+    height:pxToRem(300);
+    background: #666;
+}
+
+$type: monster;
+.ib{
+  display:inline-block;
+  width: if($lte7, 1px, 2px);
+  @if $lte7 {
+    *display:inline;
+    *zoom:1;
+  }@else{
+      display: flex;
+  }
+}
+
+@function fnn(){
+    @each $a,$b,$c in $boxList{
+        @return $a;
+    }
+};
