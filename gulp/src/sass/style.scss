@@ -3,14 +3,27 @@
 //@import "./_reset/reset.scss";
 @import "./_common/color.scss";
 @import "./_common/mixin.scss";
+blockquote, body, button, code, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 body{
-    background:$hello+-50;
-    color:$BaseC;
+    background:$hello;
+    color:$Wh;
+    margin:0;
+    padding:0;
     //sass是以函数作为驱动;
     // nth 方法是获取数组中某一个项的用法;
     // 计数是从1开始;
-    font-size: nth($fontSize,3);
+    font-size: nth($fontSize,1);
 }
+
 //关键字的使用 用 @ 关键字;
 // @each $value in $boxList{
 //     .#{$value}{
@@ -18,10 +31,10 @@ body{
 //     }
 // }
 
-.box-1,.box-2,.box-3{
-    width:100px;
-    height: 100px;
-}
+// .box-1,.box-2,.box-3{
+//     width:100px;
+//     height: 100px;
+// }
 // .box-1{
 //     background: #ddd;
 //     font-size: 10px;
@@ -40,28 +53,150 @@ body{
 // ul li span,ul li strong{
 // }
 //父子级嵌套机制;;
-ul{
-    width:100px;
-    height: 100px;
-    li{
-        width: 50px;
-        height: 40px;
-        //@at-root 跳出当前的包裹;
-        @at-root span{
-            background: #ddd;
-        }
-        span{
-            background: #666;
-        }
-    }
-    &>li{
-        background: #666;
-    }
-    //&代表当前大括号的选择器;
-    &:hover{
-        color:red;
+.mst-ued-product-lc-floor {
+    position: relative;
+    background-position: center top;
+        .mst-ued-product-lc-inner {
+            width: 1000px;
+            margin: auto;
+            .mst-ued-product-lc {
+                padding: 4px 20px 20px;
+            }
     }
 }
+ul{
+   width: 976px;
+   margin-left: -16px;
+    li{
+        display: list-item;
+        text-align: -webkit-match-parent;
+        width: 226px;
+        height: 440px;
+        float: left;
+        border: 1px solid #e0e0e0;
+        background-color: #fff;
+        margin: 16px 0 0 16px;
+
+        .mst-ued-product-lc-img-wrap {
+            display: block;
+            height: 286px;
+            position: relative;
+            .mst-ued-product-lc-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .mst-ued-product-lc-desc {
+            font-size: 12px;
+            display: block;
+            padding: 0 15px 14px;
+            .mst-ued-product-lc-brand-name {
+                color: #666;
+                height: 18px;
+                padding-top: 11px;
+                padding-bottom: 1px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .mst-ued-product-lc-name {
+                color: #333;
+                height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 16px;
+            }
+            .mst-ued-product-lc-pms {
+                color: #999;
+                height: 18px;
+                padding-bottom: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .mst-ued-product-lc-price {
+                color: #f10180;
+                font-family: arial;
+                .mst-ued-product-lc-price span {
+                    display: inline-block;
+                }
+                .mst-ued-product-lc-money-icon {
+                    margin-right: 2px;
+                    font-family: arial;
+                }
+                .mst-ued-product-lc-price-sell {
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-right: 2px;
+                }
+                .mst-ued-product-lc-price-discount {
+                    margin-left: 2px;
+                }
+                .mst-ued-product-lc-price-market {
+                    color: #999;
+                    margin-left: 6px;
+                    .mst-ued-product-lc-money-icon {
+                        margin-right: 2px;
+                        font-family: arial;
+                    }
+                }
+
+            }
+            .mst-ued-product-lc-btn {
+                overflow: hidden;
+                margin-top: 7px;
+                .mst-ued-product-lc-btn-coupon {
+                    display: none;
+                    float: left;
+                    width: 86px;
+                    background: url(//h2.appsimg.com/a.appsimg.com/upload/upimg2/ued/cxy/mst/728-ued/shangpinlouceng/btn-qiang-02.png) no-repeat;
+                    height: 30px;
+                    color: #fc1354;
+                    .mst-ued-product-lc-btn-coupon p {
+                        float: left;
+                        text-align: center;
+                        line-height: 30px;
+                        font-size: 16px;
+                        width: 57px;
+                        .mst-ued-product-lc-money-icon {
+                            margin-right: 2px;
+                            font-family: arial;
+                        }
+
+                    }
+                }
+                .mst-ued-product-lc-btn-like {
+                    border: 1px solid #f10180;
+                    text-align: center;
+                    line-height: 28px;
+                    color: #f10180;
+                    font-size: 14px;
+                    border-radius: 2px;
+                }
+                .mst-ued-product-lc-btn-like:hover{
+                    background:#c9053d;
+                    // background:yellow;
+                } 
+            }
+            
+        }
+//         //@at-root 跳出当前的包裹;
+//         @at-root span{
+//             background: #ddd;
+//         }
+//         span{
+//             background: #666;
+//         }
+//     }
+//     &>li{
+//         background: #666;
+    }
+//     //&代表当前大括号的选择器;
+//     &:hover{
+//         color:red;
+//     }
+// }
 //媒体查询;
 // @media screen and (max-width:641px){
 //     .parent{
@@ -72,7 +207,7 @@ ul{
 //         }
 //       }
 //     }
-// }
+}
 // .parent{
 //     @at-root .child &{
 //         color:#b6b6b6;

@@ -11,7 +11,8 @@ const sass = require("gulp-sass-china");//sass
 gulp.task('sass', function () {
     return gulp.src('./src/sass/**/*.scss')
       .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('./dest/css'));
+      .pipe(gulp.dest('./dest/css'))
+      .pipe(connect.reload());
 });
 
 //css的预编译器; => SASS;
@@ -42,10 +43,11 @@ gulp.task('Imagemin', function () {
 });
 
 gulp.task("index",function(){
-    return gulp.src("./src/index.html")
-           .pipe(gulp.dest("dest"))
+    return gulp.src("./src/*.html")
+           .pipe(gulp.dest("./dest"))
            .pipe(connect.reload())
 });
+
 
 // gulp.task('scripts', function() {
 //     return gulp.src('src/*.js')
@@ -56,9 +58,8 @@ gulp.task("index",function(){
 //         .pipe(uglify())
 //         .pipe(gulp.dest('dist'));
 // });
-
 gulp.task("watch",()=>{
-    gulp.watch("index.html",["index"])
+    gulp.watch("*.html",["index"])
     gulp.watch("./src/sass/**/*.scss",["sass"])
 })
 
