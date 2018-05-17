@@ -31,6 +31,11 @@ ul, menu, dir {
 .mst-ued-product-lc-stock.sold-out{background-image:url(//h2.appsimg.com/a.appsimg.com/upload/upimg2/ued/cxy/mst/728-ued/shangpinlouceng/soldOut-2x.png);background-size:69px auto}
 
 }
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi)  {.c-service {
+    background-image: url(//shop.vipstatic.com/img/common/header/sprites-2x-hash-7d2a119e.png?fd8e1caf);
+    background-position: 0 0;
+    background-size: 304px 202px;
+}}
 p {
     display: block;
     -webkit-margin-before: 1em;
@@ -38,3 +43,34 @@ p {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
+.vipFont {
+    font-family: vipFont;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.top-nav-tool li a {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.service-in{
+    padding-right:0px;
+    padding-left:0px;
+}
+.wp-service {
+    z-index: 11;
+    width: 70px;
+    padding-left: 13px;
+    padding-right: 20px;
+    height: 26px;
+    text-align: left;
+    float:left;
+}
+
+
+

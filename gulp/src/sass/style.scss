@@ -23,6 +23,404 @@ body{
     // 计数是从1开始;
     font-size: nth($fontSize,1);
 }
+.header {
+    position: relative;
+    height:168px;
+    z-index: 101;
+    color: #333;
+    font: 12px/1.5 tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+    .top-nav {
+        position: relative;
+        z-index: 103;
+        height: 28px;
+        width:1290px;
+        line-height: 26px;
+        background-color: #f5f5f5;
+        margin:0 auto;
+        // background-color:red;
+        color: #777;
+            .head-inner {
+                width: 1000px;
+                margin: 0 auto;
+                position: relative;
+                .c-h-area {
+                    display: inline-block;
+                    position: relative;
+                    z-index: 10;
+                    vertical-align: top;
+                    color: #333;
+                    float:left;
+                    .c-h-area-header {
+                        position: relative;
+                        z-index: 1;
+                        padding-left: 15px;
+                        padding-right: 23px;
+                        width: 46px;
+                        height: 27px;
+                        cursor: pointer;
+                        border-width: 1px 1px 0;
+                        border-style: solid;
+                        border-color: #f5f5f5;
+                        .c-h-area-title {
+                            display: block;
+                            line-height: 27px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            .c-h-area-triangle {
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                                display: inline-block;
+                                width: 0;
+                                height: 0;
+                                border-width: 4px;
+                                border-color: #999 transparent transparent transparent;
+                                border-style: solid dashed dotted dashed;
+                                vertical-align: top;
+                            }
+                        }
+                    }
+                    .c-h-area-body {
+                        display:none;
+                        position: absolute;
+                        top: 28px;
+                        left: 0;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        width: 470px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        .c-h-area-explain {
+                            padding-top: 7px;
+                            padding-bottom: 7px;
+                        }
+                        .c-h-area-tab{
+                            .c-h-area-tab-header {
+                                height: 29px;
+                                .c-h-area-tab-title {
+                                    padding-left: 1px;
+                                    .is-h-area-tab-title-item-current {
+                                        position: relative;
+                                        z-index: 2;
+                                        font-weight: 700;
+                                        background-color: #fff;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+                ul{ 
+                    float:right;
+                    width:771px;
+                    .wp-user{
+                        float:left;   
+                     .wp-user {
+                            margin-left: 15px;
+                            text-align: right;
+                            .top-nav-tool a {
+                                color: #666;
+                            }
+                        }
+                    }
+                    .register_hasnoname{
+                        float:left;
+
+                    }
+                    li{position:relative;
+                    }
+                    .wp-sign {
+                        position: relative;
+                        z-index: 11;
+                        width: 68px;
+                        height: 26px;
+                        text-align: center;
+                        padding-left: 10px;
+                        padding-right: 17px;
+                        float:left;
+                        .wp-sign{
+                        text-align:center;
+                            .wp-sign-icon {
+                                position: absolute;
+                                top: 2px;
+                                display: block;
+                                width: 15px;
+                                height: 18px;
+                                background: url(//shop.vipstatic.com/img/common/header_sign-hash-0459d02c.gif?3c0ef42f) no-repeat;
+                                margin-right: 3px;
+                               
+                            }
+
+                        }
+                    }
+                    .last-wp{
+                        z-index: 11;
+                        width: 70px;
+                        padding-left: 13px;
+                        height: 26px;
+                        text-align: left;
+                        float:left;
+                        .service-in{
+                            position: absolute;
+                            z-index: 23;
+                            float:left;
+                            .ico-dis {//倒三角图标
+                                margin-top: 12px;
+                                width: 0;
+                                float:right;
+                                margin-left:1px;
+                                height: 0;
+                                line-height: 0;
+                                vertical-align: middle;
+                                border-width: 4px;
+                                border-color: #999 transparent transparent transparent;
+                                border-style: solid dashed dotted dashed;
+                            }
+                        }    
+                    }
+                    .wp-fav-nav {
+                        position:relative;
+                        padding-left: 13px;
+                        width: 60px;
+                        padding-right: 20px;
+                        height: 26px;
+                        padding-left:13px;
+                        padding-right:20px;
+                        .service-in{
+                            position: absolute;
+                            z-index: 23;
+                            float:left;
+                            .ico-dis {//倒三角图标
+                                margin-top: 12px;
+                                width: 0;
+                                float:right;
+                                margin-left:1px;
+                                height: 0;
+                                line-height: 0;
+                                vertical-align: middle;
+                                border-width: 4px;
+                                border-color: #999 transparent transparent transparent;
+                                border-style: solid dashed dotted dashed;
+                            }
+                            .ico-mob {//手机图标
+                                background-image: url(//shop.vipstatic.com/img/common/header/sprites-hash-9b207a41.png?85f095f2);
+                                background-position: -294px -142px;
+                                width: 10px;
+                                height: 14px;
+                                margin-left: 1px;
+                                margin-right: 3px;
+                                margin-top: 6px;
+                                vertical-align: middle;
+                                display:block;
+                                float:left;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    .head-logo{
+            height: 100px;
+            background-color: #fff;
+            .head-inner {
+                width: 1000px;
+                margin: 0 auto;
+                position: relative;
+                .head-cart {
+                    display: inline;
+                    position: relative;
+                    z-index: 9;
+                    float: right;
+                    margin-top: 33px;
+                    margin-left: 20px;
+                    width: 106px;
+                    .tool {
+                        position: relative;
+                        z-index: 1;
+                        padding-right: 34px;
+                        padding-left: 30px;
+                        width: 40px;
+                        height: 32px;
+                        line-height: 32px;
+                        cursor: pointer;
+                        border: 1px solid #ddd;
+                        background-color: #f7f7f7;
+                        border-radius: 3px;
+                        .ico-bag {
+                            background-image: url(//shop.vipstatic.com/img/common/header/sprites-hash-9b207a41.png?85f095f2);
+                            background-position: -93px -208px;
+                            width: 12px;
+                            height: 17px;
+                            position: absolute;
+                            top: 8px;
+                            left: 13px;
+                            z-index: 1;
+                        }
+                        .counti-cons-bg {
+                            position: absolute;
+                            top: 8px;
+                            right: 8px;
+                            z-index: 1;
+                            border-radius: 8px;
+                            height: 16px;
+                            width: 24px;
+                            line-height: 16px;
+                            color: #fff;
+                            text-align: center;
+                            background-color: #f00581;
+                        }
+                    }
+                }
+                .c-logo {
+                    display: inline;
+                    position: relative;
+                    float: left;
+                    z-index: 1;
+                    margin-right: 1px;
+                    min-width: 140px;
+                    height: 100px;
+                    .header-logo-dop {
+                        margin-left: -20px;
+                        min-width: 160px;
+                        overflow: hidden;
+                    }
+                }
+                .c-service{
+                    float:right;
+                    width:304px;
+                    height:100px;
+                }
+            }
+        }
+    .main-nav {
+        clear: both;
+        position: relative;
+        height: 40px;
+        line-height: 40px;
+        background-color: #f10180;
+        font-size: 14px;
+        color: #fff;
+        .head-inner {
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            li {
+                float: left;
+                position: relative;
+                z-index: 8;
+                width:60px;
+                height:40px;
+                .ico-dis {
+                    position:absolute;
+                    top:18px;
+                    margin-left:6px;
+                    line-height: 0;
+                    vertical-align: middle;
+                    border-width: 4px;
+                    border-color: #fff transparent transparent transparent;
+                    border-color: #fff transparent transparent transparent;
+                    border-style: solid dashed dotted dashed;
+                }
+            }
+        }
+    }
+}
+//页面换了
+.newnav{
+    width:auto;
+    font-size:0px;
+    display:block; 
+}
+//倒计时
+.plugin{
+    .top-box-1212 {
+        background: #000;
+        color: #fff;
+        .top-con-1212 {
+            margin: 0 auto;
+            width: 960px;
+            height: 62px;
+            position: relative;
+            overflow: hidden;
+            .d_time {
+                height: 60px;
+                line-height: 60px;
+                position: absolute;
+                left: 250px;
+                top: 0;
+                z-index: 5;
+                .top-box-note {
+                    margin-right: 12px;
+                    font-size: 16px;
+                    font-family: "microsoft Yahei";
+                    vertical-align: top;
+                    float: left;
+                }
+                i {
+                    font: 700 28px/30px "微软雅黑",arial;
+                    letter-spacing: 0px;
+                    width: 40px;
+                    display: inline-block;
+                    text-align: center;
+                    margin: 13px 0 0;
+                }
+                .color_hui {
+                    color: #e4007f;
+                }
+            }
+        }
+    }
+}
+//背景图片
+.pictures{
+    width:auto;
+    font-size:0px;
+    display:block;
+
+    img{
+        display: block;
+        font-size:0;
+        width:1920px;
+        height:221px;
+    }
+}
+//侧边栏
+
+    .mst-nav-522-wrap {
+        // display: none;
+        width: 120px;
+        height:166px;
+        position: fixed;
+        left: 50%;
+        top: 30%;
+        z-index: 11;
+        margin: 0 0 0 520px;
+        .mst-nav-522-list {
+            background-color: #303030;
+            width: 100px;
+            margin: 0 auto;
+            .mst-nav-522-item {
+                width:84px;
+                height:33px;
+                font-size: 12px;
+                cursor: pointer;
+                padding: 0 8px;
+                .mst-nav-522-item-inner {
+                    text-align: justify;
+                    display: block;
+                    line-height: 1.4;
+                    padding: 8px;
+                    position: relative;
+                    border-bottom: 1px solid #212121;
+                    border-bottom-color: #212121;
+                }
+            }
+        }
+    }
+
 
 //关键字的使用 用 @ 关键字;
 // @each $value in $boxList{
@@ -53,6 +451,7 @@ body{
 // ul li span,ul li strong{
 // }
 //父子级嵌套机制;;
+//---------------------------------活动页 瀑布流------------------------
 .mst-ued-product-lc-floor {
     position: relative;
     background-position: center top;
@@ -61,13 +460,15 @@ body{
             margin: auto;
             .mst-ued-product-lc {
                 padding: 4px 20px 20px;
+                height:6865px;
+                overflow:hidden;
             }
     }
 }
 ul{
    width: 976px;
    margin-left: -16px;
-    li{
+   .mst-ued-product-lc-item{
         display: list-item;
         text-align: -webkit-match-parent;
         width: 226px;
@@ -76,6 +477,7 @@ ul{
         border: 1px solid #e0e0e0;
         background-color: #fff;
         margin: 16px 0 0 16px;
+        margin-top:16px;
 
         .mst-ued-product-lc-img-wrap {
             display: block;
@@ -150,7 +552,7 @@ ul{
                     display: none;
                     float: left;
                     width: 86px;
-                    background: url(//h2.appsimg.com/a.appsimg.com/upload/upimg2/ued/cxy/mst/728-ued/shangpinlouceng/btn-qiang-02.png) no-repeat;
+                    // background: url(//h2.appsimg.com/a.appsimg.com/upload/upimg2/ued/cxy/mst/728-ued/shangpinlouceng/btn-qiang-02.png) no-repeat;
                     height: 30px;
                     color: #fc1354;
                     .mst-ued-product-lc-btn-coupon p {
@@ -181,6 +583,11 @@ ul{
             }
             
         }
+}
+//---------------------------------活动页 瀑布流------------------------
+//---------------------------------  头  -----------------------------
+
+
 //         //@at-root 跳出当前的包裹;
 //         @at-root span{
 //             background: #ddd;
@@ -191,7 +598,7 @@ ul{
 //     }
 //     &>li{
 //         background: #666;
-    }
+    // }
 //     //&代表当前大括号的选择器;
 //     &:hover{
 //         color:red;

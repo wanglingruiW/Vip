@@ -5,3 +5,18 @@ $root:10px;
 // $boxList:box-1,box-2,box-3;
 $boxList:(box-1,red,10px) (box-2,#ddd,12px) (box-3,#b6b6b6,15px);
 $lte7: true;
+
+.top-nav-tool .register_hasnoname:after, .top-nav-tool .wp-order:after, .top-nav-tool .wp-phone:after, .top-nav-tool .wp-fav-nav:after, .top-nav-tool .wp-sign:after, .top-nav-tool .wp-user:after {
+    background-image: url(//shop.vipstatic.com/img/common/header/sprites-hash-9b207a41.png?85f095f2);
+    background-position: -246px -184px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    right: -5px;
+    z-index: 1;
+    content: '';
+}
+.mst-nav-522-item, .mst-nav-522-item-inner, .mst-nav-522-item-4 .mst-nav-522-item-inner:before {
+    color: #ffffff;
+}
