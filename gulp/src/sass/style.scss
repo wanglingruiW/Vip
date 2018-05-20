@@ -307,6 +307,44 @@ body{
             width: 1000px;
             margin: 0 auto;
             position: relative;
+            .nav-category {
+                float: right;
+                .main-nav-atag {
+                    display: block;
+                    height: 40px;
+                    _height: auto;
+                    padding: 0 14px;
+                    text-align: center;
+                    color: #fff;
+                    _width: 80px;
+                    _padding: 0;
+                    font-size: 16px;
+                    white-space: nowrap;
+                }
+            }
+            .nav-comingsoon {
+                float: right;
+                position: relative;
+                z-index: 8;
+                width: 100px;
+                height: 40px;
+                    .main-nav-atag{
+                        position:relative;
+                        
+                            .link-front-icon{
+                                position: absolute;
+                                left:0;
+                                margin-top:10px;
+                            }
+                            #problemso{
+                                position:absolute;
+                                right:0;
+                                line-height:40px;
+                                font-size:48px;
+                            }
+                        }
+                    }
+                 }
             li {
                 float: left;
                 position: relative;
@@ -326,7 +364,7 @@ body{
                 }
             }
         }
-    }
+     
 }
 //页面换了
 .newnav{
@@ -389,37 +427,37 @@ body{
 }
 //侧边栏
 
-    .mst-nav-522-wrap {
-        // display: none;
-        width: 120px;
-        height:166px;
-        position: fixed;
-        left: 50%;
-        top: 30%;
-        z-index: 11;
-        margin: 0 0 0 520px;
-        .mst-nav-522-list {
-            background-color: #303030;
-            width: 100px;
-            margin: 0 auto;
-            .mst-nav-522-item {
-                width:84px;
-                height:33px;
-                font-size: 12px;
-                cursor: pointer;
-                padding: 0 8px;
-                .mst-nav-522-item-inner {
-                    text-align: justify;
-                    display: block;
-                    line-height: 1.4;
-                    padding: 8px;
-                    position: relative;
-                    border-bottom: 1px solid #212121;
-                    border-bottom-color: #212121;
-                }
+.mst-nav-522-wrap {
+    // display: none;
+    width: 120px;
+    height:166px;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    z-index: 11;
+    margin: 0 0 0 520px;
+    .mst-nav-522-list {
+        background-color: #303030;
+        width: 100px;
+        margin: 0 auto;
+        .mst-nav-522-item {
+            width:84px;
+            height:33px;
+            font-size: 12px;
+            cursor: pointer;
+            padding: 0 8px;
+            .mst-nav-522-item-inner {
+                text-align: justify;
+                display: block;
+                line-height: 1.4;
+                padding: 8px;
+                position: relative;
+                border-bottom: 1px solid #212121;
+                border-bottom-color: #212121;
             }
         }
     }
+}
 
 
 //关键字的使用 用 @ 关键字;
@@ -460,7 +498,7 @@ body{
             margin: auto;
             .mst-ued-product-lc {
                 padding: 4px 20px 20px;
-                height:6865px;
+                // height:6865px;
                 overflow:hidden;
             }
     }
@@ -673,4 +711,1314 @@ $type: monster;
     @each $a,$b,$c in $boxList{
         @return $a;
     }
-};
+}
+//------------------ --注册----- 登陆---------------------
+#regSingle {
+    background-color: #fdfbfe;
+    .layout{
+        width: 1000px;
+        margin: 40px auto;
+        .header{
+            overflow: hidden;
+            zoom: 1;
+            padding-bottom: 44px;
+        }
+        .bannerHeaderf{
+            float:left;
+            width: 315px;
+            height: 53px;
+            z-index:9;
+            background:url(../img/log3.png) no-repeat;
+            left:0;
+            top:0;
+            margin-top:25px;
+        }
+        .bannerHeader{
+            float: right;
+            width: 445px;
+            height: 28px;
+            background:url(../img/log3.png) no-repeat;
+            background-position: 0 -68px;
+            margin-top: 25px;
+        }
+    }
+    .content_J-ads_clear{
+        margin: 40px auto;
+        width:1000px;
+        height:600px;
+        background:url(../img/log1.jpg) no-repeat;
+
+        .regForm{
+            width:300px;
+            height:458px;
+            float:right;
+            margin: 40px 20px 0 0;
+//-------------------------------------------------图标
+            .m-third-login {
+                margin-top: 50px;
+                width:300px;
+                height:55px;
+                .title {
+                    margin-bottom: 5px;
+                    line-height: 24px;
+                    color: #666;
+                }
+                .clearfix {
+                    img{//------------------------------------四个小图标
+                        width:24px;
+                        height:24px;
+                        line-height:24px;
+                        float:left;
+                        margin-right:8px;
+                        border-radius: 3px;
+                        opacity:0.6;
+                    }
+                    img:hover{opacity:1;}
+                    a {
+                        color: #666;
+                        width:24px;
+                        height:24px;
+                        line-height: 24px;
+                        float:left;
+
+                    }
+                }
+            }
+            .regHeaderTip {
+                font-size: 14px;
+                margin-bottom: 24px;
+                overflow: hidden;
+                zoom: 1;
+                line-height: 16px;
+                .fl {
+                    float: left;
+                }
+                .fr {
+                    float: right;
+                    #J_normal_loginlink{
+                        color: #f10180;
+                        line-height: 12px;
+                        vertical-align: bottom;
+                        &:hover{border-bottom:1px solid #f10180;}
+                    }
+                }
+            }
+            #reg-form-wrapper{
+                .register-form{
+                    #ui-form-item-group{
+                        width:300px;
+                        height:45px;
+                        .u-other-item{
+                            width:300px;
+                            position: relative;
+                            display: inline-block;
+                            vertical-align: top;
+                            -webkit-transition: none!important;
+                            transition: none!important;
+                            -webkit-transition-duration: none!important;
+                            transition-duration: none!important;
+                            .f-right {//---------------------------忘记密码，记住用户名
+                                float:right;
+                                width:60px;
+                                height:22px;
+                                a{
+                                color: #1d94d1;
+                                text-align: center;
+                                &:hover{color:lightskyblue;}
+                                }
+                            }
+                            .f-left{
+                                float: left;
+                                .ui-checkbox {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin-right: 5px;
+                                    font-size: 0;
+                                    line-height: 0;
+                                    .ul-checkbox-normal{
+                                        width:12px;
+                                        height:12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .control-group{
+                        .reg-form-btn {//-----------------两个立即注册的a 标签
+                            font-family: "\5FAE\8F6F\96C5\9ED1",Arial,tahoma,sans-serif;
+                            font-size: 16px;
+                            width: 300px;
+                            height: 40px;
+                            line-height: 40px;
+                            margin-top: 4px;
+                            display:block;
+                            background-color: #f10180;
+                            border: 1px solid #f10180;
+                            transition: .3s;
+                            cursor: pointer;
+                            display: inline-block;
+                            border-radius: 3px;
+                            text-decoration: none;
+                            text-align: center;
+                        } 
+                        .entrance-link {
+                            float: right;
+                            margin: 18px 0 0;
+                            color: #1d94d1;
+                            height: 12px;
+                            font-size: 12px;
+                            text-decoration: none;
+                        }
+                        .ui-form-item-group{
+                            position: relative;
+                            display: inline-block;
+                            vertical-align: top;   
+                            .ui-checkbox {
+                                vertical-align: top;
+                                width: 19px;
+                                line-height:12px;
+                                margin-right:0;
+                                .ui-checkbox-normal {
+                                    vertical-align: text-top;
+                                    width:10px;
+                                    height:10px;
+                                    margin-top:-12px;
+                                }
+                            }
+                            .u-provision-txt {
+                                vertical-align: middle;
+                                font-size: 12px;
+                                display: inline-block;
+                                width: 276px;
+                                line-height: 1.5;
+                                a {
+                                    color: #1d94d1;
+                                }
+                            }
+                            .ui-input{
+                                color: #333;
+                                background-color: #fff;
+                                border: 1px solid #b2b2b2;
+                                width: 278px;
+                                height: 18px;
+                                line-height: 18px;
+                                padding: 6px 10px;
+                                border-radius: 3px;
+                                font-family: "\5FAE\8F6F\96C5\9ED1",Arial,tahoma,sans-serif;
+                            }
+                            .ipt-verify-code{
+                                width: 154px;
+                                margin-right: 10px;
+                            }//短的输入框
+                            .btn-verify-code {
+                                height:28px;
+                                font-size: 12px;
+                                padding: 6 10px;
+                                width: 108px;
+                                line-height:28px;
+                                border-radius:3px;
+                                float:right;
+                            }//-------------------------------------获取验证码
+                            #vipFont-verify{
+                                position: absolute;
+                                right: 135px;
+                                top: 10px;
+                                width:10px;
+                                height:10px;
+                                z-index: 11;
+                                // padding-right: 10px;
+                                // padding-left: 5px;
+                                line-height: 30px;
+                                font-size: 17px;
+                                border:1px solid red;
+                                border-radius: 50%;
+                                // visibility: hidden;
+                                opacity: 1;
+                            }//----------------------------------特殊的小圈圈
+                            .u-input-warning {
+                                position: absolute;
+                                right: 15px;
+                                top: 10px;
+                                width:10px;
+                                height:10px;
+                                z-index: 11;
+                                // padding-right: 10px;
+                                // padding-left: 5px;
+                                line-height: 30px;
+                                font-size: 17px;
+                                border:1px solid red;
+                                border-radius: 50%;
+                                // visibility: hidden;
+                                opacity: 1;
+                            }
+                            .u-input-tip {
+                                font-size: 12px;
+                                position: relative;
+                                min-height: 19px;
+                                max-height: 36px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                margin-top: 2px;
+                                margin-bottom: 5px;
+                                line-height: 1.5;
+                                display: block;
+                                .ui-checkbox {
+                                    vertical-align: top;
+                                    width: 19px;
+                                }
+                                span{
+                                    color: #f64a4a;
+                                    .strength-indicator {
+                                        // display: none;
+                                        margin-right: 15px;
+                                        .indicator-item-bg {
+                                            background-color: #e0e0e0;
+                                            width: 30px;
+                                            height: 8px;
+                                            display: inline-block;
+                                            overflow: hidden;
+                                            indicator-item {
+                                                width: 10px;
+                                                height:5px;
+                                                background-color: #f64a4a;
+                                            }
+                                            .text-weak {
+                                                display: inline;
+                                                color: red;
+                                            }
+                                            .strength-indicator {
+                                                display: none;
+                                                font-size: 12px;
+                                                color: red;
+                                            }
+                                        }
+                                    
+                                    }
+                                }
+                            }
+                    //----------------------立即注册，两个a标签-------------------------                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        width:1200px;
+        height:12px;
+        margin:0 auto;
+        .copyright {
+            text-align: center;
+            color: #767074;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+    }
+}
+    
+
+//-----------------------------------------产品详情页
+.FW-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    _overflow: hidden;
+    .FW-product {
+    position: relative;
+    z-index: 10;
+    width:1000px;
+    height:701px; 
+    margin:0 auto;
+
+    .M-class {
+        width: 1000px;
+        padding: 11px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        span:hover{
+            color:red;
+        }
+        i{
+            font-style: normal;
+        }
+    }
+    .M-product{
+        width:1000px;
+        height:auto;
+        .M-pic {
+            float: left;
+            position: relative;
+            width:420px;
+            height:593px;
+            #J-mer-ImgReview{
+                width:420px;
+                height:489px;
+                .pic-sliderwrap {
+                    width: 420px;
+                    height: 420px;
+                    position: relative;
+                    z-index: 99;
+                    margin-bottom: 5px;
+                    background-color: #f7f7f7;
+                    .show-midpic {
+                        width: 420px;
+                        height: 420px;
+                        position: relative;
+                        text-align: center;
+                        .zoomPad {
+                            float: left;
+                            position: relative;
+                            z-index: 99;
+                            cursor: crosshair;
+                            text-align: center;
+                            width: 420px;
+                            height: 420px;
+                            overflow: hidden;
+                            img{
+                                width:332px;
+                                height:420;
+                            }
+                        }
+                    }
+                }
+                .pic-slider {//--------------------轮播图小图片----------------------
+                    position: relative;
+                    width: 420px;
+                    height: 64px;
+                    overflow: hidden;
+                    text-align: center;
+                    #J-sImg-wrap {
+                        overflow: hidden;
+                        display: inline-block;
+                        height:58px;
+                        .pic-slider-items {
+                            width: 62px;
+                            height: 62px;
+                            margin: 0 7px 0 0;
+                            float: left;
+                            cursor: pointer;
+                            overflow: hidden;
+                            position: relative;
+                            border: 1px solid #f2f2f2;
+                            background-color: #f7f7f7;
+                        }
+                    }
+                }
+            }
+            .product-text {
+                width:420px;
+                height:22px;
+                position: relative;
+                font-size: 0;
+                padding: 12px 0;
+                border-bottom: 1px #e2e2e2 dashed;
+                .other-infoCoding {
+                    color: #999;
+                    line-height: 20px;
+                    display: inline-block;
+                    font-size: 12px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    max-width: 200px;
+                }
+                .star-icon {
+                    display: inline-block;
+                    margin-right: 5px;
+                    vertical-align: top;
+                    background:url(../img/good23.png) no-repeat;
+                    background-position: -337px -204px;
+                    width: 16px;
+                    height: 15px;
+                    float:left;
+                }
+                .collect-tips {
+                    font-size: 12px;
+                    width:48px;
+                    float:right;
+                }
+                .onsell-collect {
+                    line-height: 16px;
+                    cursor: pointer;
+                    width: 70px;
+                    padding: 1px 0 1px 2px;
+                    display: inline-block;
+                    font-size: 12px;
+                    margin-left: 18px;
+                    vertical-align: top;
+                }
+                .pi-share-box {
+                    bottom: 12px;
+                    position: absolute;
+                    right: 0;
+                    width:95px;
+                    height:24px;
+                    background:yellow;
+                    .J_vip_share{
+                        width:95px;
+                        height:24px;
+                        .share_tit_wrap {
+                            padding: 0 9px;
+                            height: 22px;
+                            line-height: 22px;
+                            font-size: 0;
+                            display: inline-block;
+                            background: #fafafa;
+                            border: solid 1px #c2c2c2;
+                            border-radius: 2px;
+                            cursor: pointer;
+                            position: relative;
+                            z-index: 100;
+                            transition: border .3s;
+                            .tit_icon {
+                                background:url(../img/good32.png)no-repeat;
+                                background-position: -16px -19px;
+                                display: inline-block;
+                                width: 15px;
+                                height: 12px;
+                                margin-right: 4px;
+                                position:relative;
+                            }
+                            .tit_cnt {
+                                font-size: 12px;
+                                height: 22px;
+                                line-height: 22px;
+                                position: relative;
+                            }
+                            .tit_arrow {
+                                border: solid 3px transparent;
+                                _border-color: #fff;
+                                border-top-color: #999;
+                                margin-left: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            #J-safeguard-icon{
+                width:420px;
+                height:58px;
+                img{
+                    width:420px;
+                    height:58px;
+                }
+            }
+        }
+        .M-productInfo {
+            float: right;
+            width: 550px;
+            position: relative;
+            z-index: 100;
+            min-height: 634px;
+            .product-content-inner {
+                min-height: 538px;
+                _height: 536px;
+                .pi-title-box{
+                    width:550px;
+                    height:50px;
+                    margin-bottom:10px;
+                    .pib-title {
+                        color: #4d4d4d;
+                        clear: both;
+                        .pib-title-class {
+                            width: 340px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            font-size: 12px;
+                            color: #777578;
+                            line-height: 22px;
+                            min-height: 22px;
+                        }
+                        .pib-title-detail {
+                            font-size: 16px;
+                            color: #333;
+                            max-height: 40px;
+                            overflow: hidden;
+                            line-height: 20px;
+                            margin-top: 8px;
+                            margin-bottom: 8px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .pi-price-box {
+                    background: url(../img/background1.png) no-repeat #faf5f8;
+                    margin-bottom: 20px;
+                    padding-bottom: 15px;
+                    position: relative;
+                    z-index: 13;
+                    width:550px;
+                    height:124px;
+                    .pbox-price {
+                        font-family: arial;
+                        font-size: 48px;
+                        margin-left: 20px;
+                        display: inline-block;
+                        position: relative;
+                        color: #f43499;
+                        line-height: 1.2;
+                        margin-top: 13px;
+                        .pbox-yen {
+                            font-size: 20px;
+                            font-style: normal;
+                        }
+                        em{
+                            font-style: normal;
+                        }
+                    }
+                    .pi-dicount-box {
+                        display: inline-block;
+                        z-index: 30;
+                        position: relative;
+                        vertical-align: top;
+                        margin-top: 24px;
+                        .pbox-off-box {
+                            margin: 0 16px 0 8px;
+                            .pbox-off {
+                                color: #666;
+                                border: 1px solid #666;
+                                position: relative;
+                                font-size: 12px;
+                                color: #f43499;
+                                border-radius: 3px;
+                                text-align: center;
+                                border: 1px solid #f43499;
+                                padding: 0 5px;
+                            }
+                        }
+                        .pbox-market {
+                            padding: 0 20px 0 10px;
+                            color: #666;
+                            font-size: 14px;
+                        }
+                    }
+                    #J-specialPrice-warp{
+                        width:550px;
+                        height:28px;
+                        .spcecialPrice-box {
+                            margin: 0 20px 5px;
+                            position: relative;
+                                .sprice-title {
+                                    position:relative;
+                                    border-top-left-radius: 4px;
+                                    border-bottom-left-radius: 4px;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    text-align: center;
+                                    width:90px;
+                                    height: 28px;
+                                    line-height: 28px;
+                                    float: left;
+                                    background-color: #f10180;
+                                    padding: 0 10px;
+                                    .sp-icon-iron {
+                                        background-image: url(../img/good23.png);
+                                        background-position: 195px 196px;
+                                        width: 22px;
+                                        height: 31px;
+                                        top: -6px;
+                                        left: 5px;
+                                        position:absolute;
+                                    }
+                                    span{
+                                        font-size:14px;
+                                        position:absolute;
+                                        right:5px;
+                                    }
+                                }
+                                .sprice-content {
+                                    float: left;
+                                    height: 26px;
+                                    line-height: 26px;
+                                    padding: 0 10px;
+                                    border: 1px solid #f10180;
+                                    border-top-right-radius: 4px;
+                                    border-bottom-right-radius: 4px;
+                                    .sprice-mark {
+                                        color: #f10180;
+                                    }
+                                    .sp-price {
+                                        font-family: arial;
+                                        font-size: 24px;
+                                        color: #f10180;
+                                    }
+                                    .sprice-tips {
+                                        position: relative;
+                                        top: -4px;
+                                    }
+                            }
+                        }
+                    }
+                    .pbox-pms {
+                        padding: 0 20px;
+                        position: relative;
+                        .pbox-pms-wrap{
+                            width:510px;
+                            height:18px;
+                            .clearfix{
+                                width:510px;
+                                height:18px;
+                                zoom: 1;
+                                margin-bottom: 3px;
+                                margin-top:5px;
+                                .pp-class {
+                                    float: left;
+                                    width: 62px;
+                                    height: 18px;
+                                    text-align: center;
+                                    line-height: 18px;
+                                    background-color: #f3b241;
+                                    color: #fff;
+                                    font-size: 12px;
+                                    margin-right: 5px;
+                                }
+                                .pp-con{
+                                    float:left;
+                                    .vipFont {
+                                        font-family: vipFont;
+                                        speak: none;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-variant: normal;
+                                        text-transform: none;
+                                        font-size: 16px;
+                                        -webkit-font-smoothing: antialiased;
+                                        -moz-osx-font-smoothing: grayscale;
+                                    }
+                                }
+                                .pp-activity {
+                                    margin-left:10px;
+                                    position: relative;
+                                    float: left;
+                                    .pms-activity-goods-icon {
+                                        cursor: pointer;
+                                        color: #f43499;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pi-attr-box{
+                    width:550px;
+                    height:360px;
+                    .cartAdd-form{
+                        position:relative;
+                        .g-delivery-address {
+                            width:550px;
+                            height:32px;
+                            z-index: 20;
+                            position: relative;
+                            dt {
+                                float: left;
+                                font-size: 12px;
+                                width: 40px;
+                                text-align: left;
+                                color: #999;
+                                line-height: 32px;
+                                overflow: hidden;
+                            }
+                            dd {
+                                float: left;
+                                .delivery-address-box {
+                                    position: relative;
+                                    z-index: 10;
+                                    .delivery-address-info {
+                                        width: 250px;
+                                        border: 1px solid #ccc;
+                                        cursor: pointer;
+                                        background-color: #fff;
+                                        position: relative;
+                                        .delivery-address-tips {
+                                            height: 30px;
+                                            line-height: 30px;
+                                            padding: 0 35px 0 10px;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                        }
+                                        .delivery-address-up {
+                                            position: absolute;
+                                            right: 10px;
+                                            top: 4px;
+                                            color: #b3b3b3;
+                                        }
+                                        .vipFont{
+                                            position: absolute;
+                                            width:16px;
+                                            height:24px;
+                                            right: 10px;
+                                            top: 4px;
+                                            color: #b3b3b3;
+                                            font-family: vipFont;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-variant: normal;
+                                            text-transform: none;
+                                            font-size: 16px;
+                                            -webkit-font-smoothing: antialiased;
+                                            background:url(../img/good33.png) 168px 30px;
+                                            opacity:0.2;
+                                            &:hover {opacity:1;}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .i-freight {
+                            position: relative;
+                            z-index: 14;
+                            margin-top: 5px;
+                            width:550px;
+                            height:32px;
+                            dt {
+                                float: left;
+                                font-size: 12px;
+                                width: 40px;
+                                text-align: left;
+                                color: #999;
+                                line-height: 32px;
+                                overflow: hidden;
+                            }
+                            .freight-con {
+                                color: #666;
+                                line-height: 32px;
+                                line-height: 19px\0;
+                                line-height: 20px\9;
+                                position: relative;
+                                span {
+                                    line-height: 32px;
+                                    .freight-free {
+                                        display: inline-block;
+                                        height: 18px;
+                                        color: #fff;
+                                        background-color: #f3b241;
+                                        padding: 0 2px;
+                                        line-height: 16px;
+                                        margin-right: 5px;
+                                        font-style: normal;
+                                    }
+                                }
+                            }
+                        }
+                        .i-color {
+                            padding-top: 12px;
+                            position: relative;
+                            z-index: 12;
+                            min-height: 40px;
+                            dt {
+                                float: left;
+                                font-size: 12px;
+                                width: 40px;
+                                text-align: left;
+                                color: #999;
+                                line-height: 32px;
+                                overflow: hidden;
+                            }
+                            .color-list{
+                                float: left;
+                                width:500px;      
+                                ul {
+                                    padding-left:20px;
+                                    list-style: none;
+                                    li {
+                                        float: left;
+                                        width:85px;
+                                        height: 32px;
+                                        _height: 31px;
+                                        position: relative;
+                                        margin: 0 10px 9px 0;
+                                        #J-colorItem-511797827 {
+                                            padding: 0;
+                                            border: 2px solid #f43499;
+                                            .i-select {
+                                                display: block;
+                                                bottom: 1px;
+                                                right: 1px;
+                                                z-index: 2;
+                                                background-image: url(../img/good23.png);
+                                                background-position: -337px -125px;
+                                                width: 17px;
+                                                height: 16px;
+                                                position: absolute;
+                                            }
+                                        }
+                                        .size-list-item {
+                                            float: left;
+                                            position: relative;
+                                            min-width: 52px;
+                                            max-width: 304px;
+                                            _width: 52px;
+                                            height: 26px;
+                                            font-size: 12px;
+                                            padding: 1px 10px;
+                                            margin: 0 10px 10px 0;
+                                            border: 1px solid #ccc;
+                                            text-align: center;
+                                            line-height: 26px;
+                                            cursor: pointer;
+                                            background-color: #fff;
+                                        }
+                                        .J-colorItem {
+                                            display: inline-block;
+                                            width:81px;
+                                            height: 28px;
+                                            padding: 1px;
+                                            border: 1px solid #ccc;
+                                            .color-selected {
+                                                padding: 0;
+                                                border: 2px solid #f43499; 
+                                                display: inline-block;
+                                                height: 28px; 
+                                                .color-item-name {
+                                                    display: inline-block;
+                                                    text-align: center;
+                                                    max-width: 40px;
+                                                    text-overflow: ellipsis;
+                                                    white-space: nowrap;
+                                                    overflow: hidden;
+                                                    padding: 0 15px 0 10px;
+                                                    line-height: 27px;
+                                                    font-size:24px;
+                                                }
+                                            }
+                                            .color-item-name {
+                                                display: inline-block;
+                                                text-align: center;
+                                                max-width: 40px;
+                                                text-overflow: ellipsis;
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                padding: 0 15px 0 10px;
+                                                line-height: 27px;
+                                            }    
+                                        }    
+                                    }
+                                }                             
+                            }
+                        }
+                        .i-size {
+                            padding: 12px 11px 0;
+                            position: relative;
+                            z-index: 11;
+                            margin-left: -11px;
+                            zoom: 1;
+                            min-height: 40px;
+                            width:539px;
+                            dt {
+                                float: left;
+                                font-size: 12px;
+                                width: 40px;
+                                text-align: left;
+                                color: #999;
+                                line-height: 32px;
+                                overflow: hidden;
+                            }
+                            .size-list {
+                                position: relative;
+                                padding-right: 120px;
+                                zoom: 1;
+                                width: 375px;
+                                height:80px;
+                                display:block;
+                                float: left;
+                                ul {
+                                    width:375px;
+                                    height:80px;
+                                    list-style: none;
+                                    #J-cartAdd-sizeID-1435267149{
+                                        border: 2px solid #f43499;
+                                        height: 26px;
+                                        padding: 0 9px;
+                                        _overflow: hidden;
+                                        position:relative;
+                                        margin-left:20px;
+                                        .i-select {
+                                            display: block;
+                                            background-image: url(../img/good23.png);
+                                            background-position: -337px -125px;
+                                            width: 17px;
+                                            height: 16px;
+                                            right: -1px;
+                                            bottom: -1px;
+                                            position:absolute;
+                                        }
+                                    }
+                                    #J-cartAdd-sizeID-1435270671{
+                                        background-color: #d9d9d9;
+                                        color: #999;
+                                        border: 1px solid #ccc;
+                                        cursor: default;
+                                        padding: 1px 10px;
+                                        margin-left:20px;
+                                    }
+                                    .size-list-item {
+                                        float: left;
+                                        position: relative;
+                                        min-width: 52px;
+                                        max-width: 304px;
+                                        _width: 52px;
+                                        height: 26px;
+                                        font-size: 12px;
+                                        padding: 1px 10px;
+                                        margin: 0 10px 10px 0;
+                                        border: 1px solid #ccc;
+                                        text-align: center;
+                                        line-height: 26px;
+                                        cursor: pointer;
+                                        background-color: #fff;
+                                        .size-list-item-name {
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                            max-width: 304px;
+                                            display: inline-block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .i-num {
+                            display:block;
+                            padding: 11px 10px;
+                            position: relative;
+                            height: 30px;
+                            margin: -1px 0 0 -10px;
+                            padding-bottom: 10px;
+                            dt {
+                                float: left;
+                                font-size: 12px;
+                                width: 40px;
+                                text-align: left;
+                                color: #999;
+                                line-height: 32px;
+                                overflow: hidden;
+                            }
+                            .num-box {
+                                position: relative;
+                                height: 28px;
+                                border: 1px solid #b3b3b3;
+                                float:left;
+                                .num-reduce {
+                                    float: left;
+                                    height: 21px;
+                                    line-height: 28px;
+                                    background-color: #f9f8f8;
+                                    color: #dad8d8;
+                                }
+                                .amount {
+                                    float: left;
+                                    width: 29px;
+                                    height: 100%;
+                                    line-height: 22px;
+                                    font-size: 12px;
+                                    border-left: 1px solid #e4e3e3;
+                                    border-right: 1px solid #e4e3e3;
+                                    overflow: hidden;
+                                    font-size:normal;
+                                    font-style:normal;
+                                }
+                                input{
+                                    font-family: inherit;
+                                    font-size: 100%;
+                                    font-style: inherit;
+                                    font-weight: inherit;
+                                }
+                                .vipFont {
+                                    font-size: 10px;
+                                }
+                                a {
+                                    float: left;
+                                    width: 21px;
+                                    height: 100%;
+                                    line-height: 22px;
+                                    font-size: 15px;
+                                    color: #7d7c7c;
+                                    background-color: #f9f8f8;
+                                    -webkit-transition: .3s ease-out;
+                                    transition: .3s ease-out;
+                                }
+                            }
+                            .num-msg {
+                                float: left;
+                                height: 28px;
+                                line-height: 28px;
+                                padding-left: 10px;
+                                font-size: 14px;
+                                color: #333;
+                            }
+                            .ui-quantity {
+                                display: inline-block;
+                                width: 73px;
+                                height: 22px;
+                                background-color: #fff;
+                                border: 1px solid #e3e2e2;
+                                color: #333;
+                                vertical-align: top;
+                                text-align: center;
+                                -webkit-transition: .3s ease-out;
+                                transition: .3s ease-out;
+                            }
+                        }
+                        .i-button {
+                            width:196px;
+                            height:44px;
+                            _height: 35px;
+                            margin-bottom: 12px;
+                            margin-left: 40px;
+                            margin-top: 40px;
+                            background-color: #f10180;
+                            border: 1px solid #f10180;
+                            border-radius: 3px;
+                            .button-box {
+                                height: 46px;
+                                position: relative;
+                                border-radius: 3px;
+                                .ui-btn-large {
+                                    background-color: #f10180;
+                                    min-width: 72px;
+                                    display:block;
+                                    text-align:center;
+                                    margin:0 auto;
+                                    font: 18px/44px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    -webkit-transition: .3s;
+                                    transition: .3s;
+                                    border:none;
+                                    border-radius: 3px;
+
+                                    .ui-btn-loading-before {
+                                        display: inline-block;
+
+                                        .if-shopping-bag {
+                                            display:block;
+                                            float:left;
+                                            width:22px;
+                                            height:22px;
+                                            font-size: 22px;
+                                            margin-top:10px;
+                                            vertical-align: center;
+                                            margin-right: 6px;
+                                            font-family: vipFont;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-variant: normal;
+                                            text-transform: none;
+                                            background:url(../img/good33.png) 177px 127px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .vip-point {
+                            position: relative;
+                            z-index: 8;
+                            margin-left: 40px;
+                            color: #999;
+                            margin-bottom: 30px;
+                            .user-in-vip{
+                                width:510px;
+                                height:18px;
+                                .vip-currency-title-v1 {
+                                    display: inline-block;
+                                    em{
+                                        font-style:normal;
+                                    }
+                                }
+                                .point-tips {
+                                    display: inline-block;
+                                    position: relative;
+                                    margin-left: 3px;
+                                    vertical-align: top;
+                                    i {
+                                        margin: 2px 0 0;
+                                        display: inline-block;
+                                        cursor: default;
+                                        vertical-align: top;
+                                        line-height: 1;
+                                        width:16px;
+                                        height:16px;
+                                        background:url(../img/good33.png) 130px 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .other-form-box {
+                border-top: 1px dashed #e6e6e6;
+                padding-top: 10px;
+                width:550px;
+                height:26px;
+                .other-service {
+                    position: relative;
+                    z-index: 5;
+                    margin-bottom: 15px;
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    .other-name {
+                        float: left;
+                        color: #999;
+                        margin-right: 10px;
+                        line-height: 20px;
+                    }
+                    .other-box {
+                        float: left;
+                        text-align: left;
+                        min-height: 20px;
+                        line-height: 20px;
+                        font-size: 12px;
+                        color: #666;
+                        width: 505px;
+                        .ht-txt {
+                            position: relative;
+                            z-index: 1;
+                            margin-bottom: 5px;
+                            .ht-tip {
+                                position: relative;
+                                display: inline-block;
+                                vertical-align: middle;
+                                .open {
+                                    display:block;
+                                    width:16px;
+                                    height:20px;
+                                    background:url(../img/good33.png) 165px 28px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+    #J_recoData_wrap_top{
+        width:1000px;
+        height:20px;
+    }
+    #J-FW-detail{
+        .M-placeholder {
+            height: 36px;
+            margin-bottom: 30px;
+            .M-detailTop {
+                height: 36px;
+                border-top: 1px solid #e7e7e7;
+                border-bottom: 3px solid #000;
+                background-color: #fff;
+                border-right: 1px solid #e7e7e7;
+                .M-detailTop-wrap {
+                    width: 1000px;
+                    margin: 0 auto;
+                    .dt-list {
+                        position: relative;
+                        display:block;
+                        .selected {
+                            border-bottom: 3px solid #f10180;
+                            color: #f10180;
+                            float: left;
+                            padding-right:15px;
+                            margin-left:15px;
+                            _width: 100px;
+                            _padding: 0;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            font-size: 14px;
+                            color: #333;
+                            border-left: 1px solid #e7e7e7;
+                        }
+                        .dt-list-item {
+                            &:hover{
+                            border-bottom: 3px solid #f10180;
+                            color: #f10180;
+                            }
+                            &:hover .pro-comment-tagcount{
+                            color: #f10180;
+                            }
+                            cursor: pointer;
+                            float: left;
+                            padding: 0 15px;
+                            _width: 100px;
+                            _padding: 0;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            font-size: 14px;
+                            color: #333;
+                            border-left: 1px solid #e7e7e7;
+                            .pro-comment-tagcount {
+                                font-size: 12px;
+                                color: #999;
+                                i{
+                                    font-style:normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .M-detail{
+            .M-detailCon {
+                font-size: 14px;
+                .size-helper-table-wrapper {
+                    padding-bottom: 40px;
+                    .dc-tit-new {
+                        text-align: left;
+                        clear: both;
+                        padding-left: 20px;
+                        background: url(../img/good24.png) repeat-x left bottom;
+                        position: relative;
+                        padding-bottom: 6px;
+                        .dc-tit-new-icon {
+                            background-image: url(../img/good23.png);
+                            background-position: -197px -265px;
+                            width: 13px;
+                            height: 13px;
+                            position: absolute;
+                            top: 9px;
+                            left: 0;
+                        }
+                        .dc-title {
+                            color: #f10180;
+                            font-size: 20px;
+                            .dc-title-en {
+                                color: #999;
+                                font-size: 20px;
+                                padding-left: 5px;
+                                position: relative;
+                                bottom: -2px;
+                                font-family: arial;
+                                font-style:normal;
+                            }
+                        }
+                    }
+                    .size-helper-description{
+                        .dc-size-tip {
+                            font-size: 14px;
+                            line-height: 1.8;
+                            margin-top: 10px;
+                            dt {
+                                font-weight: 700;
+                                color: #333;
+                            }
+                        }
+                        .size-helper-cnt{
+                            width:1000px;
+                            height:393px;
+                            margin-top:35px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

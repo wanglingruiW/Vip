@@ -101,12 +101,12 @@
         <div class="c-logo">
             <div class="header-logo-dop">
                 <a target="_blank" href="//www.vip.com/" mars_sead="home_header_vip_logo">
-                <img src="//b.appsimg.com/upload/momin/2018/05/16/139/1526439646673.gif" alt="全球精选_正品特卖" id="J-vipLogo" height="100">
+                <img src="img/movevip.gif" alt="全球精选_正品特卖" id="J-vipLogo" height="100">
                 </a>
             </div>
         </div>
         <div class="c-service  header-vip  has-service-operation  is-service-on-right">
-                <img class="c-service-img  J-service-img  " src="//b.appsimg.com/2017/08/31/104/1504179372347.png" width="304" height="100" data-original="//b.appsimg.com/2017/08/31/104/1504179372347.png">
+                <img class="c-service-img  J-service-img  " src="img/wfjz.png" width="304" height="100" data-original="//b.appsimg.com/2017/08/31/104/1504179372347.png">
         </div>
     </div>
 </div>
@@ -203,7 +203,7 @@
 <!--侧边栏-->
 <div >
     <div class="mst-nav-522-wrap mst-nav-522-wrap-l5">
-        <div class="mst-nav-522">
+        <div class="mst-nav-522" id="J_btn">
                 <ul class="mst-nav-522-list clearfix">  
                     <li class="mst-nav-522-item mst-nav-522-item-4 active">
                         <a class="mst-nav-522-item-inner">衬衫</a>
@@ -217,7 +217,7 @@
                     <li class="mst-nav-522-item mst-nav-522-item-4">
                         <a class="mst-nav-522-item-inner">下装</a>
                     </li>  
-                    <li class="mst-nav-522-item mst-nav-522-item-4  mst-nav-522-item-top">
+                    <li class="mst-nav-522-item mst-nav-522-item-4  mst-nav-522-item-top" id ="btn">
                         <a class="mst-nav-522-item-inner">回顶部</a>
                     </li>  
                 </ul>
@@ -270,6 +270,7 @@
 </div>
 </body>
 <script src = "libs/jquery-3.3.1.js"></script>
+<script src = "libs/active.js"></script>
 <script>
  $(function(){
 //      var  opt = {
@@ -323,7 +324,7 @@
                 render_page(){
                     this.html = "<ul>"
 
-                    console.log(this.json)
+                    // console.log(this.json)
                     // console.log(this.json)
                     this.json.forEach(function(item){
                             // console.log(item);
@@ -385,7 +386,7 @@
                     this.load_data()
                     .then(function(res){
 
-                        console.log(res);
+                        // console.log(res);
                         this.json = res.data;
                         this.render_page();
                         this.sort_item();

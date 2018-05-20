@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>signin</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body id ="regSingle">
+<div class = "regSingle">
+    <div class = "layout">
+        <div class = "header">
+            <!-- <img href = "../img/log3.png"/> -->
+            <div class ="bannerHeaderf"></div>
+            <div class = "bannerHeader"></div>
+        </div>
+    </div>
+    <div class = "content_J-ads_clear">
+        <div class="regForm">
+            <div class="regHeaderTip">
+                    <span class="fl">欢迎注册</span>
+                    <span class="fr f12" passport_mars_sead_hover="">已注册可
+                        <a href="https://passport.vip.com/login?ff=125|2|1|1" class="red hvLine" id="J_normal_loginlink">直接登录</a>
+                    </span>
+            </div>
+            <div id="reg-form-wrapper">
+                <form id="reg_mobile_form" class="register-form">
+                    <div class="control-group clearfix z-u-form-item-warning">
+                        <div class="ui-form-item-group">
+                                <input type="text" class="ui-input ipt-phone" id="J_mobile_name" name="loginName" placeholder="请输入手机号码">
+                                <span class="u-input-warning vipFont if-wrong"></span>
+                                <span class="u-input-success vipFont if-success"></span>
+                                <div class="u-input-tip"><span class="text">手机号不能为空</span></div>
+                        </div>
+                    </div>
+                    <div class="control-group clearfix z-u-form-item-warning">
+                        <div class="ui-form-item-group adjust-tip-icon">
+                                <input id="J_mobile_code" type="text" class="ui-input ipt-verify-code" name="pvcode" placeholder="请输入手机验证码">
+                                <span class="u-input-warning vipFont vipFont if-wrong" id= "vipFont-verify"></span>
+                                <span class="u-input-success vipFont vipFont if-success"id= "vipFont-verify"></span>
+                                <a id="J_mobile_verifycode_btn" class="ui-btn-medium btn-verify-code ui-btn-disable" >获取验证码</a>
+                                <div class="u-input-tip">
+                                        <span class="text">请输入6位数字手机验证码</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="control-group clearfix z-u-form-item-warning">
+                        <div class="ui-form-item-group">
+                            <input type="password" class="ui-input" id="J_mobile_pwd" name="password" maxlength="20" placeholder="密码由6-20位字母，数字和符号组合" passport_mars_sead_hover="" passport_mars_sead_input="mobileRegPw" mars_sead="125|2|1|5">
+                            <span class="u-input-warning vipFont if-wrong"></span>
+                            <span class="u-input-success vipFont if-success"></span>
+                            <div class="u-input-tip">
+                                <span class="strength-indicator">
+                                    <span class="indicator-item-bg">
+                                        <span class="indicator-item"></span>
+                                    </span>
+                                    <span class="indicator-text text-weak">弱</span>
+                                    <span class="indicator-text text-medium">中</span>
+                                    <span class="indicator-text text-strong">强</span>
+                                </span><span class="text password-tip">密码不能为空</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group clearfix z-u-form-item-warning">
+                        <div class="ui-form-item-group">
+                            <input type="password" class="ui-input confirm-pwd" id="J_mobile_confirm_pwd" name="confirmPassword" maxlength="20" placeholder="请再次输入上面的密码" passport_mars_sead_hover="" passport_mars_sead_input="mobileRegCPw" mars_sead="125|2|1|6">
+                            <span class="u-input-warning vipFont if-wrong"></span>
+                            <span class="u-input-success vipFont if-success"></span>
+                            <div class="u-input-tip"><span class="text">请输入确认密码</span></div>
+                        </div>
+                    </div>
+                    <div class="control-group clearfix">
+                        <div class="ui-form-item-group">
+                            <span class="ui-checkbox mr0">
+                                <input type="checkbox" id="J_mobile_agree" name="agree" class="ui-checkbox-normal" value="1" mars_sead="125|2|1|11"><label for="J_mobile_agree" class="ui-checkbox-simulation"></label>
+                            </span>
+                            <label for="J_mobile_agree" class="u-provision-txt">我已阅读并接受以下条款：
+                                <a href="http://support.vip.com/clause/?ff=125|2|1|12" class="u-link" target="_blank" id="J_mobile_provision">《唯品会服务条款》</a>
+                                <a href="http://support.vip.com/privacy/" class="u-link" target="_blank">《隐私条款》</a>
+                                <a href="https://i.vpal.com/clause.html" class="u-link" target="_blank">《唯品支付用户服务协议》</a>
+                                <a href="https://grcredit.vip.com/pc/protocol" class="u-link" target="_blank">《唯品信用服务协议》</a>
+                            </label>
+                            <div class="u-input-tip"><span class="text">接受服务条款才能注册</span></div>
+                        </div>
+                    </div>
+                    <div class="control-group mb30 clearfix">
+                        <a  role="button" id="J_mobile_reg_button" class="ui-btn-large ui-btn-primary ui-btn-loading reg-form-btn form-submit">
+                            <span class="ui-btn-loading-before">立即注册</span>
+                            <span class="ui-btn-loading-after">
+                                <i class="ii-loading-gray-16x16"></i>
+                                <span class="ui-btn-txt">处理中...</span>
+                            </span>
+                        </a>
+                        <a class="entrance-link reg-form-link" id="J_mobile_to_email">
+                            <span>通过邮箱注册</span>
+                            <span class="vipFont if-arrow-right"></span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>  
+<div class="footer">
+		<div class="copyright">Copyright 2008-2018 vip.com，All Rights Reserved ICP证：粤 B2-20080329</div>
+</div>
+</body>
+<script src = "libs/jquery-3.3.1.js"></script>
+</html>

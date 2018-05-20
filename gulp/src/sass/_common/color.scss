@@ -20,3 +20,9 @@ $lte7: true;
 .mst-nav-522-item, .mst-nav-522-item-inner, .mst-nav-522-item-4 .mst-nav-522-item-inner:before {
     color: #ffffff;
 }
+.ui-btn-disable, .ui-btn-disable:active, .ui-btn-disable:hover, .z-ui-btn-loading, .z-ui-btn-loading:active, .z-ui-btn-loading:hover {
+    border: 1px solid #d0d0d0;
+    color: #999;
+    background: #d0d0d0;
+    cursor: not-allowed;
+}
