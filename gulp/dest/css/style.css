@@ -894,11 +894,29 @@ html {
                 cursor: crosshair;
                 text-align: center;
                 width: 420px;
-                height: 420px;
-                overflow: hidden; }
-                .FW-wrap .FW-product .M-product .M-pic #J-mer-ImgReview .pic-sliderwrap .show-midpic .zoomPad img {
+                height: 420px; }
+                .FW-wrap .FW-product .M-product .M-pic #J-mer-ImgReview .pic-sliderwrap .show-midpic .zoomPad .wrap {
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  z-index: 999; }
+                .FW-wrap .FW-product .M-product .M-pic #J-mer-ImgReview .pic-sliderwrap .show-midpic .zoomPad .smallImg {
                   width: 332px;
                   height: 420; }
+                .FW-wrap .FW-product .M-product .M-pic #J-mer-ImgReview .pic-sliderwrap .show-midpic .zoomPad .big {
+                  width: 420px;
+                  height: 420px;
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  display: none;
+                  overflow: hidden; }
+                  .FW-wrap .FW-product .M-product .M-pic #J-mer-ImgReview .pic-sliderwrap .show-midpic .zoomPad .big .bigImg {
+                    position: absolute;
+                    left: 0px;
+                    display: inline-block;
+                    width: 1326px;
+                    height: 1680px; }
           .FW-wrap .FW-product .M-product .M-pic #J-mer-ImgReview .pic-slider {
             position: relative;
             width: 420px;
@@ -1005,6 +1023,7 @@ html {
             width: 420px;
             height: 58px; }
       .FW-wrap .FW-product .M-product .M-productInfo {
+        display: block;
         float: right;
         width: 550px;
         position: relative;
@@ -1370,6 +1389,58 @@ html {
                   height: 80px;
                   display: block;
                   float: left; }
+                  .FW-wrap .FW-product .M-product .M-productInfo .product-content-inner .pi-attr-box .cartAdd-form .i-size .size-list .c-size-helper {
+                    position: absolute;
+                    top: -25px;
+                    right: 0;
+                    z-index: 1;
+                    width: 97px;
+                    height: 55px; }
+                    .FW-wrap .FW-product .M-product .M-productInfo .product-content-inner .pi-attr-box .cartAdd-form .i-size .size-list .c-size-helper .size-helper-trigger {
+                      padding-top: 30px;
+                      width: 97px;
+                      height: 25px;
+                      line-height: 25px;
+                      cursor: pointer;
+                      background: url(//shop.vipstatic.com/img/detail/detail_size_assitant-hash-5e12558a.gif?eaf8fe6b) no-repeat 0 0; }
+                      .FW-wrap .FW-product .M-product .M-productInfo .product-content-inner .pi-attr-box .cartAdd-form .i-size .size-list .c-size-helper .size-helper-trigger .size-helper-trigger-text {
+                        text-align: center;
+                        color: #f10180; }
+                    .FW-wrap .FW-product .M-product .M-productInfo .product-content-inner .pi-attr-box .cartAdd-form .i-size .size-list .c-size-helper .size-helper-notice {
+                      background-image: url(../img/good23.png);
+                      background-position: 0 0;
+                      width: 140px;
+                      height: 120px;
+                      position: absolute;
+                      top: 55px;
+                      right: -14px;
+                      z-index: 1; }
+                      .FW-wrap .FW-product .M-product .M-productInfo .product-content-inner .pi-attr-box .cartAdd-form .i-size .size-list .c-size-helper .size-helper-notice .size-helper-notice-inner {
+                        padding: 34px 30px 25px; }
+                        .FW-wrap .FW-product .M-product .M-productInfo .product-content-inner .pi-attr-box .cartAdd-form .i-size .size-list .c-size-helper .size-helper-notice .size-helper-notice-inner .button-size-helper-notice-close {
+                          background-image: url(../img/good23.png);
+                          background-position: -337px -28px;
+                          width: 23px;
+                          height: 23px;
+                          position: absolute;
+                          top: 11px;
+                          right: 7px;
+                          z-index: 2;
+                          line-height: 100px;
+                          overflow: hidden; }
+                        .FW-wrap .FW-product .M-product .M-productInfo .product-content-inner .pi-attr-box .cartAdd-form .i-size .size-list .c-size-helper .size-helper-notice .size-helper-notice-inner .size-helper-notice-title {
+                          font-weight: 700;
+                          color: #f10180;
+                          padding-left: 5px;
+                          text-align: center;
+                          font-size: 14px; }
+                        .FW-wrap .FW-product .M-product .M-productInfo .product-content-inner .pi-attr-box .cartAdd-form .i-size .size-list .c-size-helper .size-helper-notice .size-helper-notice-inner .size-helper-notice-text {
+                          width: 80px;
+                          color: #666;
+                          text-align: center;
+                          line-height: 1.4;
+                          padding-left: 5px;
+                          font-size: 13px; }
                   .FW-wrap .FW-product .M-product .M-productInfo .product-content-inner .pi-attr-box .cartAdd-form .i-size .size-list ul {
                     width: 375px;
                     height: 80px;
@@ -1601,8 +1672,65 @@ html {
   .FW-wrap #J_recoData_wrap_top {
     width: 1000px;
     height: 20px; }
-  .FW-wrap #J-FW-detail .M-placeholder {
+  .FW-wrap #J-FW-detail .active {
     height: 36px;
+    margin-bottom: 30px;
+    position: fixed;
+    top: 0px;
+    margin: 0 auto;
+    height: 36px;
+    z-index: 999; }
+    .FW-wrap #J-FW-detail .active .M-detailTop {
+      height: 36px;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 3px solid #000;
+      background-color: #fff;
+      border-right: 1px solid #e7e7e7; }
+      .FW-wrap #J-FW-detail .active .M-detailTop .M-detailTop-wrap {
+        width: 1000px;
+        margin: 0 auto; }
+        .FW-wrap #J-FW-detail .active .M-detailTop .M-detailTop-wrap .dt-list {
+          position: relative;
+          display: block; }
+          .FW-wrap #J-FW-detail .active .M-detailTop .M-detailTop-wrap .dt-list .selected {
+            border-bottom: 3px solid #f10180;
+            color: #f10180;
+            float: left;
+            padding-right: 15px;
+            margin-left: 15px;
+            _width: 100px;
+            _padding: 0;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            border-left: 1px solid #e7e7e7; }
+          .FW-wrap #J-FW-detail .active .M-detailTop .M-detailTop-wrap .dt-list .dt-list-item {
+            cursor: pointer;
+            float: left;
+            padding: 0 15px;
+            _width: 100px;
+            _padding: 0;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            border-left: 1px solid #e7e7e7; }
+            .FW-wrap #J-FW-detail .active .M-detailTop .M-detailTop-wrap .dt-list .dt-list-item:hover {
+              border-bottom: 3px solid #f10180;
+              color: #f10180; }
+            .FW-wrap #J-FW-detail .active .M-detailTop .M-detailTop-wrap .dt-list .dt-list-item:hover .pro-comment-tagcount {
+              color: #f10180; }
+            .FW-wrap #J-FW-detail .active .M-detailTop .M-detailTop-wrap .dt-list .dt-list-item .pro-comment-tagcount {
+              font-size: 12px;
+              color: #999; }
+              .FW-wrap #J-FW-detail .active .M-detailTop .M-detailTop-wrap .dt-list .dt-list-item .pro-comment-tagcount i {
+                font-style: normal; }
+  .FW-wrap #J-FW-detail .M-placeholder {
+    height: 40px;
+    position: relative;
     margin-bottom: 30px; }
     .FW-wrap #J-FW-detail .M-placeholder .M-detailTop {
       height: 36px;
@@ -1682,6 +1810,10 @@ html {
             bottom: -2px;
             font-family: arial;
             font-style: normal; }
+      .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .dc-img {
+        width: 1000px;
+        overflow: hidden;
+        padding: 20px 0; }
       .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .dc-size-tip {
         font-size: 14px;
         line-height: 1.8;
@@ -1692,4 +1824,450 @@ html {
       .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .size-helper-cnt {
         width: 1000px;
         height: 393px;
-        margin-top: 35px; }
+        margin-top: 35px;
+        background: yellow; }
+        .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .size-helper-cnt img {
+          display: block;
+          width: 1000px;
+          height: 393px; }
+      .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .J-wrap-sizeTable {
+        font-size: 14px;
+        width: 1000px;
+        height: 566px;
+        background: pink; }
+        .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .J-wrap-sizeTable img {
+          display: block;
+          width: 1000px;
+          height: 566px; }
+      .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .dc-info {
+        padding: 20px 0 40px 0;
+        font-size: 14px; }
+        .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .dc-info .dc-table {
+          border-collapse: collapse;
+          font-size: 14px;
+          width: 100%;
+          font-family: arial,\5FAE\8F6F\96C5\9ED1;
+          font-family: arial,\5FAE\8F6F\96C5\9ED1; }
+          .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .dc-info .dc-table tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit; }
+            .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .dc-info .dc-table tbody tr {
+              display: table-row;
+              vertical-align: inherit;
+              border-color: inherit; }
+              .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .dc-info .dc-table tbody tr .dc-table-tit {
+                text-align: right;
+                background-color: #f5f5f5;
+                color: #666;
+                width: 90px;
+                font-weight: 700;
+                vertical-align: middle; }
+              .FW-wrap #J-FW-detail .M-detail .M-detailCon .size-helper-table-wrapper .size-helper-description .dc-info .dc-table tbody tr td {
+                border: 1px solid #ededed;
+                padding: 10px;
+                color: #999;
+                width: 370px; }
+  .FW-wrap #J-FW-detail .M-detail .pro-comment {
+    margin-bottom: 20px;
+    width: 1000px;
+    text-align: left; }
+    .FW-wrap #J-FW-detail .M-detail .pro-comment .M-detailTitle {
+      width: 987px;
+      background-color: #eae8eb;
+      line-height: 45px;
+      padding-left: 15px; }
+    .FW-wrap #J-FW-detail .M-detail .pro-comment .M-question {
+      background: red;
+      width: 960px;
+      height: 882px; }
+      .FW-wrap #J-FW-detail .M-detail .pro-comment .M-question .zxfirst {
+        display: block;
+        padding: 0px;
+        width: 960px;
+        height: 302px;
+        margin: 0px; }
+      .FW-wrap #J-FW-detail .M-detail .pro-comment .M-question .zxsecond {
+        display: block;
+        padding: 0px;
+        height: 350px;
+        width: 960px;
+        margin: 0px; }
+    .FW-wrap #J-FW-detail .M-detail .pro-comment .product-comment-content {
+      padding-bottom: 20px; }
+      .FW-wrap #J-FW-detail .M-detail .pro-comment .product-comment-content .comment-list-wrapper, .FW-wrap #J-FW-detail .M-detail .pro-comment .product-comment-content .comment-tabs-wrapper {
+        border: 1px solid #ddd;
+        border-top: none;
+        width: 1000px;
+        height: 151px; }
+        .FW-wrap #J-FW-detail .M-detail .pro-comment .product-comment-content .comment-list-wrapper .product-hasnocoment, .FW-wrap #J-FW-detail .M-detail .pro-comment .product-comment-content .comment-tabs-wrapper .product-hasnocoment {
+          padding: 50px;
+          text-align: center;
+          line-height: 50px;
+          vertical-align: top; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .product-comment-content .comment-list-wrapper .product-hasnocoment .if-sigh, .FW-wrap #J-FW-detail .M-detail .pro-comment .product-comment-content .comment-tabs-wrapper .product-hasnocoment .if-sigh {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            vertical-align: middle;
+            text-align: center;
+            color: #f9a123;
+            line-height: 50px;
+            background: url(../img/good32.png) 45px 122px; }
+    .FW-wrap #J-FW-detail .M-detail .pro-comment .g-footprint {
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 32px; }
+    .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox {
+      overflow: hidden;
+      position: relative;
+      width: 1000px;
+      height: 685px; }
+      .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper {
+        width: 100%;
+        overflow: hidden;
+        font-size: 12px;
+        margin-bottom: 20px; }
+        .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-head {
+          background-color: #eae8eb;
+          line-height: 45px;
+          padding-left: 15px;
+          margin-bottom: 20px; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-head .head-name {
+            font-size: 14px;
+            font-weight: 400;
+            margin-right: 10px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-head .head-name .head-subtitle {
+              font-size: 12px;
+              color: #999; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-head .head-page {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            font-size: 14px;
+            font-family: arial;
+            _right: auto;
+            _left: 500px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-head .head-page .ui-paging-mini {
+              font: 12px/32px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+              _zoom: 1;
+              line-height: 24px; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-head .head-page .ui-paging-mini .ecommend-wrapper {
+                vertical-align: middle;
+                cursor: pointer;
+                font-size: 20px;
+                color: #666; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-head .head-page .ui-paging-mini .total {
+                padding-right: 0;
+                font-size: 12px;
+                line-height: 24px;
+                display: inline-block;
+                vertical-align: middle;
+                color: #666; }
+                .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-head .head-page .ui-paging-mini .total .focus {
+                  color: #666;
+                  font-style: normal; }
+        .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body {
+          position: relative;
+          overflow: hidden;
+          height: 580px;
+          width: 998px; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body:hover .icon-btn-prev {
+            left: 0px; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body:hover .icon-btn-next {
+            right: 0px; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body .reco-item {
+            float: left;
+            width: 184px;
+            margin-right: 20px;
+            position: relative;
+            margin-bottom: 20px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body .reco-item:hover .item-img-bk {
+              display: block; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body .reco-item img {
+              width: 184px;
+              margin-bottom: 8px;
+              vertical-align: top; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body .reco-item .item-img-bk {
+              display: none;
+              position: absolute;
+              top: 0;
+              left: 0; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body .reco-item .item-name {
+              height: 18px;
+              color: #666;
+              font-size: 12px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body .reco-item .item-price .price-vipshop {
+              color: #f10180;
+              font-size: 14px;
+              margin-right: 3px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .reco-body .reco-item .item-price .price-market {
+              color: #999;
+              font-size: 12px;
+              text-decoration: line-through; }
+        .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .icon-btn-prev {
+          left: -32px;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          position: absolute;
+          top: 50%;
+          margin-top: -40px;
+          background: rgba(0, 0, 0, 0.3);
+          width: 32px;
+          height: 54px;
+          line-height: 54px;
+          text-align: center;
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+          transition: all .3s ease-in; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .icon-btn-prev i {
+            font-family: vipFont;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale; }
+        .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .icon-btn-next {
+          right: -32px;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          position: absolute;
+          top: 50%;
+          margin-top: -40px;
+          background: rgba(0, 0, 0, 0.3);
+          width: 32px;
+          height: 54px;
+          line-height: 54px;
+          text-align: center;
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+          transition: all .3s ease-in;
+          z-index: 99; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-recomBox .detail-part2-recommend-wrapper .icon-btn-next i {
+            font-family: vipFont;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale; }
+    .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs {
+      height: 900px; }
+      .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs {
+        height: 90px;
+        width: 1000px; }
+        .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list {
+          width: 1000px;
+          height: 90px;
+          text-align: center;
+          margin-left: 0px; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list .selected {
+            float: left;
+            width: 58px;
+            height: 90px;
+            padding: 0 20px;
+            display: inline-block; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li {
+            float: left;
+            width: 58px;
+            height: 90px;
+            padding: 0 20px;
+            display: inline-block; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-0 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) 0px -120px;
+              background-repeat: no-repeat; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-1 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) -60px 0px;
+              background-repeat: no-repeat; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-1:hover {
+                background-position-y: -120px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-2 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) -120px 0px;
+              background-repeat: no-repeat; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-2:hover {
+                background-position-y: -120px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-3 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) -180px 0px;
+              background-repeat: no-repeat; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-3:hover {
+                background-position-y: -120px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-4 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) -240px 0px;
+              background-repeat: no-repeat; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-4:hover {
+                background-position-y: -120px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-5 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) -300px 0px;
+              background-repeat: no-repeat; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-5:hover {
+                background-position-y: -120px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-6 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) -360px 0px;
+              background-repeat: no-repeat; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-6:hover {
+                background-position-y: -120px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-7 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) -420px 0px;
+              background-repeat: no-repeat; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-7:hover {
+                background-position-y: -120px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-8 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) -480px 0px;
+              background-repeat: no-repeat; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-8:hover {
+                background-position-y: -120px; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-9 {
+              width: 58px;
+              display: inline-block;
+              height: 90px;
+              background: url(../img/good20.png) -540px 0px;
+              background-repeat: no-repeat; }
+              .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs .icon-list li .item-9:hover {
+                background-position-y: -120px; }
+        .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs #J-aboutUs-content-wrap .au-main {
+          width: 1000px;
+          height: 685px; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs #J-aboutUs-content-wrap .au-main .au-top-0 {
+            background-position: 0 -240px;
+            width: 1000px;
+            height: 71px;
+            background-image: url(../img/good20.png);
+            background-repeat: no-repeat; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs #J-aboutUs-content-wrap .au-main .au-con {
+            width: 1000px;
+            height: 614px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+            position: relative; }
+            .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs #J-aboutUs-content-wrap .au-main .au-con ul .active-pannel {
+              list-style: none; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs #J-aboutUs-content-wrap .au-main #_au_con_list_panel {
+            list-style: none; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs #J-aboutUs-content-wrap .au-main .au-con-left {
+            left: 0px;
+            position: absolute;
+            width: 33px;
+            height: 66px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 66px;
+            color: #e6e6e6;
+            font-size: 20px;
+            border-radius: 3px;
+            top: 200px;
+            cursor: pointer; }
+          .FW-wrap #J-FW-detail .M-detail .pro-comment .FW-aboutUs .M-aboutUs #J-aboutUs-content-wrap .au-main .au-con-right {
+            display: inline-block;
+            right: 0px;
+            position: absolute;
+            width: 33px;
+            height: 66px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 66px;
+            color: #e6e6e6;
+            font-size: 20px;
+            border-radius: 3px;
+            top: 200px;
+            cursor: pointer; }
+  .FW-wrap #J-list-sider-pms-wrap {
+    top: 184px;
+    position: fixed;
+    z-index: 101;
+    left: 50%;
+    margin-left: -638px;
+    width: 120px; }
+    .FW-wrap #J-list-sider-pms-wrap img {
+      width: 120px;
+      height: 228px;
+      display: inline-block; }
+  .FW-wrap #J_sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 101;
+    width: 36px;
+    height: 100%;
+    font-family: "Microsoft YaHei"; }
+    .FW-wrap #J_sidebar .sidebarcom-nav {
+      position: relative;
+      z-index: 101;
+      height: 100%;
+      background-color: #262626; }
+      .FW-wrap #J_sidebar .sidebarcom-nav img {
+        margin-top: -250px;
+        width: 36px;
+        height: auto; }
+      .FW-wrap #J_sidebar .sidebarcom-nav .sidebarcom-nav-cnt {
+        width: 36px;
+        margin-top: -250px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        right: 0; }
+        .FW-wrap #J_sidebar .sidebarcom-nav .sidebarcom-nav-cnt ul {
+          margin: 0;
+          z-index: 99; }
+          .FW-wrap #J_sidebar .sidebarcom-nav .sidebarcom-nav-cnt ul .sidebarcom-my {
+            position: relative;
+            width: 36px;
+            height: 56px;
+            text-align: center;
+            cursor: pointer; }
+            .FW-wrap #J_sidebar .sidebarcom-nav .sidebarcom-nav-cnt ul .sidebarcom-my #J_my {
+              width: 36px;
+              height: 56px; }
+              .FW-wrap #J_sidebar .sidebarcom-nav .sidebarcom-nav-cnt ul .sidebarcom-my #J_my .sidebarcom-hover {
+                position: absolute;
+                right: -133px;
+                top: 0;
+                z-index: -1;
+                width: 100px;
+                height: 34px;
+                line-height: 34px;
+                padding: 0 8px;
+                border-radius: 3px 0 0 3px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-right: none;
+                font-size: 14px;
+                text-align: center;
+                -webkit-transition: .3s linear;
+                transition: .3s linear; }

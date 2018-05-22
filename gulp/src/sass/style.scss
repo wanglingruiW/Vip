@@ -1076,10 +1076,44 @@ $type: monster;
                             text-align: center;
                             width: 420px;
                             height: 420px;
-                            overflow: hidden;
-                            img{
+                            // overflow: hidden;
+                            .wrap{
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                z-index: 999;
+                            }
+                            .smallImg{                 //---------------------------放大镜---------------
                                 width:332px;
                                 height:420;
+                            }
+                            // .grayBox{
+                            //     display: none;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                            //     width: 100px;
+                            //     height: 100px;
+                            //     background: url("../img/good10.jpg");
+                            //     background-size:420px 420px;
+                            //     background-position: 0 0;
+                            //     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                            //     position: absolute;
+                            //     left: 0;
+                            //     top: 0;
+                            // }
+                            .big{
+                                width: 420px; 
+                                height: 420px;
+                                position: absolute;
+                                left: 0px;
+                                top: 0px;
+                                display: none;
+                                overflow: hidden;
+                                .bigImg{
+                                    position: absolute;
+                                    left:0px;
+                                    display:inline-block;
+                                    width:1326px;
+                                    height:1680px;
+                                }
                             }
                         }
                     }
@@ -1208,6 +1242,7 @@ $type: monster;
             }
         }
         .M-productInfo {
+            display:block;//------------------------------写放大镜暂时隐藏，记得返回来！！！！！
             float: right;
             width: 550px;
             position: relative;
@@ -1626,7 +1661,67 @@ $type: monster;
                                 width: 375px;
                                 height:80px;
                                 display:block;
-                                float: left;
+                                float: left;//-------------------弹跳小人--------
+                                .c-size-helper {
+                                    position: absolute;
+                                    top: -25px;
+                                    right: 0;
+                                    z-index: 1;
+                                    width: 97px;
+                                    height: 55px;
+                                    .size-helper-trigger {
+                                        padding-top: 30px;
+                                        width: 97px;
+                                        height: 25px;
+                                        line-height: 25px;
+                                        cursor: pointer;
+                                        background: url(//shop.vipstatic.com/img/detail/detail_size_assitant-hash-5e12558a.gif?eaf8fe6b) no-repeat 0 0;
+                                        .size-helper-trigger-text {
+                                            text-align: center;
+                                            color: #f10180;
+                                        }
+                                    }
+                                    .size-helper-notice {
+                                        background-image: url(../img/good23.png);
+                                        background-position: 0 0;
+                                        width: 140px;
+                                        height: 120px;
+                                        position: absolute;
+                                        top: 55px;
+                                        right:-14px;
+                                        z-index: 1;
+                                        .size-helper-notice-inner {
+                                            padding: 34px 30px 25px;
+                                            .button-size-helper-notice-close {
+                                                background-image: url(../img/good23.png);
+                                                background-position: -337px -28px;
+                                                width: 23px;
+                                                height: 23px;
+                                                position: absolute;
+                                                top: 11px;
+                                                right: 7px;
+                                                z-index: 2;
+                                                line-height: 100px;
+                                                overflow: hidden;
+                                            }
+                                            .size-helper-notice-title {
+                                                font-weight: 700;
+                                                color: #f10180;
+                                                padding-left:5px;
+                                                text-align: center;
+                                                font-size: 14px;
+                                            }
+                                            .size-helper-notice-text {
+                                                width:80px;
+                                                color: #666;
+                                                text-align: center;
+                                                line-height: 1.4;
+                                                padding-left:5px;
+                                                font-size:13px;
+                                            }
+                                        }
+                                    }
+                                }
                                 ul {
                                     width:375px;
                                     height:80px;
@@ -1904,8 +1999,75 @@ $type: monster;
         height:20px;
     }
     #J-FW-detail{
-        .M-placeholder {
+        .active{
             height: 36px;
+            margin-bottom: 30px;
+            position:fixed;
+            top:0px;
+            margin:0 auto;
+            height: 36px;
+            z-index:999;
+            .M-detailTop {
+                height: 36px;
+                border-top: 1px solid #e7e7e7;
+                border-bottom: 3px solid #000;
+                background-color: #fff;
+                border-right: 1px solid #e7e7e7;
+                .M-detailTop-wrap {
+                    width: 1000px;
+                    margin: 0 auto;
+                    .dt-list {
+                        position: relative;
+                        display:block;
+                        .selected {
+                            border-bottom: 3px solid #f10180;
+                            color: #f10180;
+                            float: left;
+                            padding-right:15px;
+                            margin-left:15px;
+                            _width: 100px;
+                            _padding: 0;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            font-size: 14px;
+                            color: #333;
+                            border-left: 1px solid #e7e7e7;
+                        }
+                        .dt-list-item {
+                            &:hover{
+                            border-bottom: 3px solid #f10180;
+                            color: #f10180;
+                            }
+                            &:hover .pro-comment-tagcount{
+                            color: #f10180;
+                            }
+                            cursor: pointer;
+                            float: left;
+                            padding: 0 15px;
+                            _width: 100px;
+                            _padding: 0;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            font-size: 14px;
+                            color: #333;
+                            border-left: 1px solid #e7e7e7;
+                            .pro-comment-tagcount {
+                                font-size: 12px;
+                                color: #999;
+                                i{
+                                    font-style:normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .M-placeholder {
+            height:40px;
+            position: relative;
             margin-bottom: 30px;
             .M-detailTop {
                 height: 36px;
@@ -2000,6 +2162,11 @@ $type: monster;
                             }
                         }
                     }
+                    .dc-img {
+                        width: 1000px;
+                        overflow: hidden;
+                        padding: 20px 0;
+                    }
                     .size-helper-description{
                         .dc-size-tip {
                             font-size: 14px;
@@ -2014,8 +2181,543 @@ $type: monster;
                             width:1000px;
                             height:393px;
                             margin-top:35px;
+                            background:yellow;
+                            img{
+                                display:block;
+                                width:1000px;
+                                height:393px;
+                            }
                         }
-                        
+                        .J-wrap-sizeTable {
+                            font-size: 14px;
+                            width:1000px;
+                            height:566px;
+                            background:pink;
+                            img{
+                                display:block;
+                                width:1000px;
+                                height:566px;
+                            }
+                        }
+                        .dc-info {
+                            padding: 20px 0 40px 0;
+                            font-size: 14px;
+
+                            .dc-table {
+                                border-collapse: collapse;
+                                font-size: 14px;
+                                width: 100%;
+                                font-family: arial,\5FAE\8F6F\96C5\9ED1;
+                                font-family: arial,\5FAE\8F6F\96C5\9ED1;
+                                tbody {
+                                    display: table-row-group;
+                                    vertical-align: middle;
+                                    border-color: inherit;
+                                    tr {
+                                        display: table-row;
+                                        vertical-align: inherit;
+                                        border-color: inherit;
+                                        .dc-table-tit {
+                                            text-align: right;
+                                            background-color: #f5f5f5;
+                                            color: #666;
+                                            width: 90px;
+                                            font-weight: 700;
+                                            vertical-align: middle;
+                                        }
+                                        td{
+                                            border: 1px solid #ededed;
+                                            padding: 10px;
+                                            color: #999;
+                                            width: 370px;
+                                        }
+                                    }
+                                }    
+                            }
+                        }
+                    }
+                }
+            }
+            .pro-comment {
+                margin-bottom: 20px;
+                width: 1000px;
+                text-align: left;
+                .M-detailTitle {
+                    width:987px;
+                    background-color: #eae8eb;
+                    line-height: 45px;
+                    padding-left: 15px;
+                }
+                .M-question {
+                    // padding: 0 35px;
+                    background:red;
+                    width:960px;
+                    height:882px;
+                    .zxfirst{
+                        display:block;
+                        padding:0px;
+                        width:960px;
+                        height:302px;
+                        margin:0px;
+                    }
+                    .zxsecond{
+                        display:block;
+                        padding:0px;
+                        height:350px;
+                        width:960px;
+                        margin:0px;
+                    }
+                }
+                .product-comment-content {
+                    padding-bottom: 20px;
+                    .comment-list-wrapper, .comment-tabs-wrapper {
+                        border: 1px solid #ddd;
+                        border-top: none;
+                        width:1000px;
+                        height:151px;
+                        .product-hasnocoment {
+                            padding: 50px;
+                            text-align: center;
+                            line-height: 50px;
+                            vertical-align: top;
+                            .if-sigh {
+                                display:inline-block;
+                                width:32px;
+                                height:32px;
+                                margin-right: 10px;
+                                vertical-align: middle;
+                                text-align:center;
+                                color: #f9a123;
+                                line-height:50px;
+                                background:url(../img/good32.png) 45px 122px;
+                            }
+                        }
+                    }
+                }
+                .g-footprint {
+                    overflow: hidden;
+                    position: relative;
+                    margin-bottom: 32px;
+                }
+                .FW-recomBox {
+                    overflow: hidden;
+                    position: relative;
+                    width:1000px;
+                    height:685px;
+                    .detail-part2-recommend-wrapper {
+                        width: 100%;
+                        overflow: hidden;
+                        font-size: 12px;
+                        margin-bottom: 20px;
+                        .reco-head {
+                            background-color: #eae8eb;
+                            line-height: 45px;
+                            padding-left: 15px;
+                            margin-bottom: 20px;
+                            .head-name {
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-right: 10px;
+                                .head-subtitle {
+                                    font-size: 12px;
+                                    color: #999;
+                                }
+                            }
+                            .head-page {
+                                position: absolute;
+                                top: 8px;
+                                right: 10px;
+                                font-size: 14px;
+                                font-family: arial;
+                                _right: auto;
+                                _left: 500px;
+                                .ui-paging-mini {
+                                    font: 12px/32px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+                                    _zoom: 1;
+                                    line-height: 24px;
+                                    .ecommend-wrapper {
+                                        vertical-align: middle;
+                                        cursor: pointer;
+                                        font-size: 20px;
+                                        color: #666;
+                                    }
+                                    .total {
+                                        padding-right: 0;
+                                        font-size: 12px;
+                                        line-height: 24px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        color: #666;
+                                        .focus {
+                                            color: #666;
+                                            font-style:normal;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .reco-body {
+                            position: relative;
+                            overflow: hidden;
+                            height: 580px;
+                            width:998px;
+                            &:hover .icon-btn-prev{left:0px;}
+                            &:hover .icon-btn-next{right:0px;}
+                            .reco-item {
+                                float: left;
+                                width: 184px;
+                                margin-right: 20px;
+                                position: relative;
+                                margin-bottom: 20px;
+                                &:hover .item-img-bk{display:block;}
+                                img {
+                                    width: 184px;
+                                    margin-bottom: 8px;
+                                    vertical-align: top;
+                                }
+                                .item-img-bk {
+                                    display: none;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                }
+                                .item-name {
+                                    height: 18px;
+                                    color: #666;
+                                    font-size: 12px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                .item-price{
+                                    .price-vipshop {
+                                        color: #f10180;
+                                        font-size: 14px;
+                                        margin-right: 3px;
+                                    }
+                                    .price-market {
+                                        color: #999;
+                                        font-size: 12px;
+                                        text-decoration: line-through;
+                                    }
+                                }
+                            }
+                        }
+                        .icon-btn-prev{
+                            left: -32px;
+                            border-top-right-radius: 3px;
+                            border-bottom-right-radius: 3px;
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -40px;
+                            background: rgba(0,0,0,.3);
+                            width: 32px;
+                            height: 54px;
+                            line-height: 54px;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 20px;
+                            cursor: pointer;
+                            transition: all .3s ease-in;
+                                i {
+                                    font-family: vipFont;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-variant: normal;
+                                    text-transform: none;
+                                    font-size: 16px;
+                                    -webkit-font-smoothing: antialiased;
+                                    -moz-osx-font-smoothing: grayscale;
+                                }
+                            }
+                        .icon-btn-next{
+                            right: -32px;
+                            border-top-right-radius: 3px;
+                            border-bottom-right-radius: 3px;
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -40px;
+                            background: rgba(0,0,0,.3);
+                            width: 32px;
+                            height: 54px;
+                            line-height: 54px;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 20px;
+                            cursor: pointer;
+                            transition: all .3s ease-in;
+                            z-index:99;
+                            i {
+                                font-family: vipFont;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-variant: normal;
+                                text-transform: none;
+                                font-size: 16px;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                            }
+                        }
+                    }
+                }
+                .FW-aboutUs{
+                    height:900px;
+                        .M-aboutUs{
+                            height:90px;
+                            width:1000px;
+                        .icon-list {
+                            width:1000px;
+                            height:90px;
+                            text-align: center;
+                            margin-left:0px;
+                            .selected{
+                                float: left;
+                                width: 58px;
+                                height: 90px;
+                                padding: 0 20px;
+                                display: inline-block;
+                            }
+                            li{
+                                float: left;
+                                width: 58px;
+                                height: 90px;
+                                padding: 0 20px;
+                                display: inline-block;
+                                // background:url(../img/good20.png);
+                                .item-0{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) 0px -120px;
+                                    background-repeat: no-repeat;
+                                }
+                                .item-1{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) -60px 0px;
+                                    background-repeat: no-repeat;
+                                    &:hover { background-position-y: -120px;}
+                                }
+                                .item-2{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) -120px 0px;
+                                    background-repeat: no-repeat;
+                                    &:hover { background-position-y: -120px;}
+                                }
+                                .item-3{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) -180px 0px;
+                                    background-repeat: no-repeat;
+                                    &:hover { background-position-y: -120px;}
+                                }
+                                .item-4{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) -240px 0px;
+                                    background-repeat: no-repeat;
+                                    &:hover { background-position-y: -120px;}
+                                }
+                                .item-5{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) -300px 0px;
+                                    background-repeat: no-repeat;
+                                    &:hover { background-position-y: -120px;}
+                                }
+                                .item-6{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) -360px 0px;
+                                    background-repeat: no-repeat;
+                                    &:hover { background-position-y: -120px;}
+                                }
+                                .item-7{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) -420px 0px;
+                                    background-repeat: no-repeat;
+                                    &:hover { background-position-y: -120px;}
+                                }
+                                .item-8{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) -480px 0px;
+                                    background-repeat: no-repeat;
+                                    &:hover { background-position-y: -120px;}
+                                }
+                                .item-9{
+                                    width:58px;
+                                    display:inline-block;
+                                    height: 90px;
+                                    background: url(../img/good20.png) -540px 0px;
+                                    background-repeat: no-repeat;
+                                    &:hover { background-position-y: -120px;}
+                                }
+
+                            }
+                        }
+                        #J-aboutUs-content-wrap{
+                            .au-main{
+                                width:1000px;
+                                height:685px;
+                                .au-top-0 {
+                                    background-position: 0 -240px;
+                                    width: 1000px;
+                                    height: 71px;
+                                    background-image: url(../img/good20.png);
+                                    background-repeat: no-repeat;
+                                }
+                                .au-con {
+                                    width: 1000px;
+                                    height: 614px;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                    overflow: hidden;
+                                    position: relative;
+                                    ul{
+                                        .active-pannel{
+                                            list-style: none;
+                                        }
+                                    }
+                                }
+                                #_au_con_list_panel {
+                                    list-style: none;
+                                }
+                                .au-con-left{
+                                    left:0px;
+                                    position: absolute;
+                                    width: 33px;
+                                    height: 66px;
+                                    background-color: #ccc;
+                                    text-align: center;
+                                    line-height: 66px;
+                                    color: #e6e6e6;
+                                    font-size: 20px;
+                                    border-radius: 3px;
+                                    top: 200px;
+                                    cursor: pointer;
+                                }
+                                .au-con-right {
+                                    display:inline-block;
+                                    right:0px;
+                                    position: absolute;
+                                    width: 33px;
+                                    height: 66px;
+                                    background-color: #ccc;
+                                    text-align: center;
+                                    line-height: 66px;
+                                    color: #e6e6e6;
+                                    font-size: 20px;
+                                    border-radius: 3px;
+                                    top: 200px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #J-list-sider-pms-wrap{
+        top:184px;
+        position: fixed;
+        z-index: 101;
+        left: 50%;
+        margin-left: -638px;
+        width: 120px;
+        img{
+            width:120px;
+            height:228px;
+            display:inline-block;
+        }
+    }
+    #J_sidebar {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 101;
+        width: 36px;
+        height: 100%;
+        font-family: "Microsoft YaHei";
+        .sidebarcom-nav {
+            position: relative;
+            z-index: 101;
+            height: 100%;
+            img{
+                margin-top:-250px;
+                width:36px;
+                height:auto;
+            }
+            background-color: #262626;
+            .sidebarcom-nav-cnt {
+                width:36px;
+                margin-top: -250px;
+                height: 400px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                ul{ 
+                    margin:0;
+                    z-index:99;
+                    .sidebarcom-my{
+                        position: relative;
+                        width: 36px;
+                        height:56px;
+                        text-align: center;
+                        cursor: pointer;
+                        #J_my{
+                            width:36px;
+                            height:56px;
+                            // .i-sidebarcom-my {
+                            //     width:36px;
+                            //     height:42px;
+                            //     .sidebarcom-img{
+                            //         display:block;
+                            //         line-height: 1.8;
+                            //         width:36px;
+                            //         height:42px;
+                            //         background:url(../img/good33.png)230px 92px;
+                            //         &:hover:sidebarcom-hover{right:0;}
+                            //     }
+                                // .sidebarcom-my-name {
+                                //     display:block;
+                                //     font-size: 12px;
+                                //     color: #fff;
+                                //     font-style:normal;
+                                //     text-align: center;
+                                // }
+
+                            // }
+                            .sidebarcom-hover {
+                                position: absolute;
+                                right: -133px;
+                                top: 0;
+                                z-index: -1;
+                                width: 100px;
+                                height: 34px;
+                                line-height: 34px;
+                                padding: 0 8px;
+                                border-radius: 3px 0 0 3px;
+                                background-color: #fff;
+                                border: 1px solid #ddd;
+                                border-right: none;
+                                font-size: 14px;
+                                text-align: center;
+                                -webkit-transition: .3s linear;
+                                transition: .3s linear;
+                            }
+                        }
                     }
                 }
             }
