@@ -62,3 +62,12 @@ p {
   height: 26px;
   text-align: left;
   float: left; }
+
+em {
+  font-style: normal; }
+
+a {
+  text-decoration: none; }
+
+a {
+  color: #333; }

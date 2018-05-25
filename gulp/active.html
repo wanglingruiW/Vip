@@ -300,9 +300,12 @@
                         this.render_page();
                     }.bind(this))
                     .fail(function(def,type,err_msg){
-                        // console.log(err_msg);
+                        // console.log(err_msg) ;
                     })
-                    $(document).on("scroll",$.proxy(this.is_load,this))
+                    $(document).on("scroll",$.proxy(this.is_load,this));
+                     this.main_ele.on("click",function(){
+                          console.log(1)
+                      }.bind(this));
                 },
                 load_data(){
                     this.opt = {
@@ -352,7 +355,7 @@
                                                 <span class="mst-ued-product-lc-btn-money"></span>
                                             </p>
                                         </div>
-                                        <div class="mst-ued-product-lc-btn-like">抢先收藏</div>
+                                        <button class="mst-ued-product-lc-btn-like" pro_id = "${item.id}">抢先收藏</button>
                                     </div>
                                 </a>
                          </li>`

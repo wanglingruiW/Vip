@@ -26,3 +26,9 @@ $lte7: true;
     background: #d0d0d0;
     cursor: not-allowed;
 }
+input:-webkit-autofill {  
+    background-color: #FAFFBD;  
+    background-image: none;  
+    color: #000; 
+    border:none; 
+    }  
