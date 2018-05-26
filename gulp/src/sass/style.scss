@@ -3335,33 +3335,147 @@ $type: monster;
 
 //------------主页啦～～～～～～～～
 .index-content{
+    margin:0 auto;
+    width:1440px;
+    background:url(../img/ocean.jpg) no-repeat;
+    &:hover .fbc-btn-left{
+        left:0;
+    }
     .s_bg_top{
-    width:1920px;
-    height:451px;
-    background:url(../img/bigbg.jpg) no-repeat;
-    .focus-banner-con-wrq {
-        padding: 12px;
-        padding-bottom: 0;
-        background: #fff;
-        background: rgba(255,255,255,.86);
-        width: 1146px;
+        overflow:hidden;
+        margin: 0 495px;
+        margin:0 auto;
+        width:950px;
+         height:451px;
+        
+        padding-top: 30px;
+        padding-bottom: 20px;
         position: relative;
-        margin: 0 auto;
+        margin-bottom: 10px;
+        
+    .focus-banner-con-wrq {
+        margin: 12px auto;
+
+        // background: #fff;
+        // background: rgba(255,255,255,.86);
+        width: 950px;
+        position: relative;
         box-shadow: 0 1px 3px rgba(167,167,167,.4);
         .focus-banner-con {
-            width: 1146px;
+            width: 950px;
             height: 440px;
             border-bottom: none;
             position: relative;
             overflow: hidden;
-            .fbc-list-item{
-                margin-top:5px;
-                width:400px;
-                width: 1146px;
-                height: 401px;
-                z-index: 2;
-                opacity: 1;
+            &:hover .fbc-btn-left{
+                left:0;
             }
+            &:hover .fbc-btn-right{
+                right:0;
+            }
+            .fbc-list{
+                // margin-top:5px;
+                // margin:0 auto;
+                height:400px;
+                width:5000px;
+                position:relative;
+                .fbc-list-item{
+                    float:left;
+                    margin-left:5px;
+                    margin-top:10px;
+                    height:400px;
+                    width: 980px;
+                    height: 380px;
+                    z-index: 2;
+                    opacity: 1;
+                    img{
+                        height:380px;
+                        width:980px;
+                    }
+                }
+            }
+            .fbc-btn{
+                width:33px;
+                height:66px;
+                background: rgba(0,0,0,.2);
+                border-radius: 2px;
+                position: absolute;
+                width: 33px;
+                height: 66px;
+                line-height: 66px;
+                font-size: 24px;
+                cursor: pointer;
+                top: 50%;
+                margin-top: -53px;
+                z-index: 2;
+                text-align: center;
+                -webkit-transition: all .3s ease-in;
+                .i-hv {
+                    font-size: 20px;
+                    color: #fff;
+                    opacity: .5;
+                    font-weight: lighter;
+                    font-family: vipFont;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-variant: normal;
+                    text-transform: none;
+                }
+            }   
+            .fbc-btn-left{
+                left:-33px;
+                border-radius: 3px;
+            }
+            .fbc-btn-right{
+                right:-33px;
+                border-radius: 3px;
+            }
+        }
+}
+    .fbc-trigger {
+        width: 980px;
+        margin-left: -573px;
+        height: 20px;
+        position: absolute;
+        z-index: 2;
+        bottom: 20px;
+        text-align: center;
+        margin:0 auto;
+        .fbc-trigger-con {
+            margin:0px;
+            &:hover fbc-btn-left{
+                left:0;
+            }
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            li {
+                font-family: tohama;
+                font-size: 10px;
+                color: #e8e8e8;
+                position: absolute;
+                right: 0;
+                width: 180px;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                height: 20px;
+                font: 12px 'microsoft Yahei';
+                color: #666;
+                cursor: pointer;
+                border-bottom: transparent 3px solid;
+                position: relative;
+            }
+        }
+        .fbc-trigger-line {
+            background-color: #e6057d;
+            position: absolute;
+            bottom: -3px;
+            height: 3px;
+            width: 180px;
+            left:122px;
         }
     }
     }
@@ -3415,6 +3529,7 @@ $type: monster;
                 }
             }
             .brand-wrap {
+                position:relative;
                 margin-left:85px;
                 border-bottom: 0 none;
                 width: 1020px;

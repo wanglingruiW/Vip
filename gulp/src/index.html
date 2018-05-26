@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 <body>
+
 <!--头部哦-->
 <div id="vip-common-header" class="header vip-common-header clearfix adapt-open">
     <div class = "top-nav">
@@ -149,7 +150,7 @@
 </div>
 <!--头部哦-->
 
-<div class="index-content s_bg_top">
+<div class="index-content">
     <div class = "s_bg_top">
         <div class="focus-banner-con-wrq">
             <div class="focus-banner-con" id="J-focus-banner-con">
@@ -157,15 +158,42 @@
                     <li class="fbc-list-item" >
                         <img src="img/lbt1.jpg" class="fbc_list_img">
                     </li>
+                    <li class="fbc-list-item" >
+                        <img src="img/lbt22.jpg" class="fbc_list_img">
+                    </li>
+                    <li class="fbc-list-item" >
+                        <img src="img/lbt44.jpg" class="fbc_list_img">
+                    </li>
+                    <li class="fbc-list-item" >
+                        <img src="img/lbt.jpg" class="fbc_list_img">
+                    </li>
+                    <li class="fbc-list-item" >
+                        <img src="img/lbt1.jpg" class="fbc_list_img">
+                    </li>
                 </ul>
+                <span class="fbc-btn fbc-btn-left" id="J_slidebaner_left">
+                    <i class="vipFont i-hv"></i>
+                </span>
+                <span class="fbc-btn fbc-btn-right" id="J_slidebaner_right">
+                    <i class="vipFont i-hv"></i>
+                </span>
             </div>
+        </div>
+        <div class="fbc-trigger">
+            <ul class="fbc-trigger-con" id="J_slideBanner_btns">
+                <li class="">外貌“鞋”会 最高满358减60</li>
+                <li class="selected">最高2件7折 1件8折</li>
+                <li class="">99元抢美的电饭煲 399元抢红米5A</li>
+                <li class="">环球夏日游乐园</li>
+            </ul>
+            <div class="fbc-trigger-line" id="J-trigger-line"></div>
         </div>
     </div>
     <!--轮播图待定页-->
 <div class="wrap clearfix">
     <div class="today-new shop-sort J-index-floor" id="J-hotSale-floor">
         <div class="shop-title ">
-            <img class="coundown-img" alt="开售标题" src="//a.vpimg2.com/upload/dop/2016/03/17/166/today_DDp.png">
+            <img class="coundown-img" alt="开售标题" >
         </div>
         <div class="index-zhuanshu-wrap">
             <div class ="index-zhuanshu-wrap-inner">
@@ -547,14 +575,15 @@ for(var i = 0; i< Barlist.length; i++){
     ].offsetTop + "px";
     }
 } -->
-
+<script src="libs/startMove.js"></script>
+<script src="libs/slide.js"></script>
 <script src = "libs/jquery-3.3.1.js"></script>
 <script>
 function floor(leftNav,centerFloor){
     this.leftNav = leftNav;
     this.centerFloor = centerFloor;
     // this.header = header;
-    console.log(this.leftNav,this.centerFloor)
+    // console.log(this.leftNav,this.centerFloor)
 }
 floor.prototype = {
     init:function(){
@@ -576,6 +605,7 @@ floor.prototype = {
   
 
 }
+
 // ê�
 $(function(){
     var obj = new floor(".index-nav-item",".J-index-floor");
@@ -583,5 +613,103 @@ $(function(){
     
 })
 
+
+
+//-------------------------------------- 轮播图
+
+</script>
+<script>
+    $(function() {
+	console.log(1);
+    // 把要操作的对象先获取到
+    var banner = $('.s_bg_top');
+    var Left = $('#J_slidebaner_left'); // alert(Left.length);
+    var Right = $('#J_slidebaner_right');
+    var Ul = $('.fbc-list'); // alert(Ul.length);
+    var Width = $('.fbc-list-item').width(); //alert(Width);
+    var Point = $('#J_slideBanner_btns li'); // alert(Point.length);
+    var Index = 0; //用于记录点击的次数，图片的张数(计数器，记录了图片移动的张数)
+console.log(Ul,Width,Point)
+    //点击小圆点让图片移动
+    $.each(Point, function(index, value) { //如果此处我没有用each循环来写，那么我便需要用$(this).index()方法来获取图片的下标
+        //让点击的小圆点有class样式，其他li没有class样式
+        Point.eq(index).on('click', function() {
+            $(this).addClass('now').siblings().removeClass('now');
+            Ul.stop().animate({
+                'left': -index * Width
+            });
+            Index = index;
+            console.log(Index);
+            //alert(Index);
+        })
+    });
+
+    //	点击右箭头,ul往左跑
+    Right.on('click', function() {
+        console.log(5);
+        //需要做一个判断，如果发现此时图片是最后一张图片，就不能继续执行了
+        //让index是图片的张数减一的时候,让index不继续加
+        if (Index >= 3) {
+            //让index变成0
+            Index = 0;
+            //              	让ul的left值瞬间变成0
+            Ul.css('left', 0);
+        }
+        Index++;
+        Ul.stop().animate({
+            'left': -Index * Width
+        });
+
+        if (Index == 3) {
+            //因为在图片最后面添加了一张假图片，其实最后一张图片的时候，需要对应的是索引0的小圆点
+            Point.eq(0).addClass('now').siblings().removeClass('now');
+
+        } else {
+            Point.eq(Index).addClass('now').siblings().removeClass('now');
+        }
+
+    })
+
+    //点击左箭头,让Ul往右跑
+    Left.on('click', function() {
+        console.log(2);
+        if (Index <= 0) {
+            //return; 此时不应该return,应该让index变成最大的值，left也变成最大的left
+            Index = 3;
+            Ul.css('left', -Index * Width);
+        }
+        Index--;
+        Ul.stop().animate({
+            'left': -Index * Width
+        });
+
+        if (Index == 3) {
+            //因为在图片最后面添加了一张假图片，其实最后一张图片的时候，需要对应的是索引0的小圆点
+            Point.eq(0).addClass('now').siblings().removeClass('now');
+        } else {
+            Point.eq(Index).addClass('now').siblings().removeClass('now');
+        }
+
+    })
+
+
+
+    //调取Right方法，使其自动播放
+    var time = setInterval(function() {
+        Right.click();
+    }, 2000);
+
+    //鼠标移到banner中,自动播放停止
+    banner.mouseenter(function() {
+        clearInterval(time);
+    });
+
+    // 鼠标移出banner中,自动播放开始
+    banner.mouseleave(function() {
+        time = setInterval(function() {
+            Right.click();
+        }, 5000);
+    })
+})
 </script>
 </html>

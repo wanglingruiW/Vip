@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 登 陆 </title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body id ="regSingle">
+<div class = "regSingle">
+    <div class = "layout">
+        <div class = "header">
+            <!-- <img href = "../img/log3.png"/> -->
+            <div class ="bannerHeaderf"></div>
+            <div class = "bannerHeader"></div>
+        </div>
+    </div>
+    <div class = "content_J-ads_clear">
+        <div class="regForm">
+            <div class="regHeaderTip">
+                    <span class="fl">如有账号，请登陆</span>
+                    <span class="fr f12" passport_mars_sead_hover="">
+                        <a href="https://passport.vip.com/login?ff=125|2|1|1" class="red hvLine" id="J_normal_loginlink">免费注册</a>
+                    </span>
+            </div>
+            <div id="reg-form-wrapper">
+                <form id="reg_mobile_form" class="register-form">
+                    <div class="control-group clearfix z-u-form-item-warning">
+                        <div class="ui-form-item-group">
+                                <input type="text" class="ui-input ipt-phone" id="J_mobile_name" name="loginName" placeholder="手机号/用户名/邮箱">
+                                <span class="u-input-warning vipFont if-wrong"></span>
+                                <div class="u-input-tip"><span class="text">请输入登陆名</span></div>
+                        </div>
+                    </div>
+                    <div class="control-group clearfix z-u-form-item-warning">
+                        <div class="ui-form-item-group">
+                            <input type="password" class="ui-input" id="J_mobile_pwd" name="password" maxlength="20" placeholder="密码">
+                            <span class="u-input-warning vipFont if-wrong"></span>
+                            <div class="u-input-tip">
+                                <span class="strength-indicator">
+                                    <span class="indicator-item-bg">
+                                        <span class="indicator-item"></span>
+                                    </span>
+                                </span><span class="text password-tip">请输入密码</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group clearfix">
+                        <div class="ui-form-item-group">
+                            <span class="ui-checkbox mr0">
+                            </span>
+                        </div>
+                    </div>
+                    <div id="ui-form-item-group">
+                        <div class="u-other-item">
+                            <div class="u-cannot-login f-right">
+                            <a href="https://safe.vip.com/login/findPW/page" class="u-link i-forget-link" target="_blank" seed-id="btnForgot"><span>忘记密码 &gt;</span>
+                            </a>
+                            </div>
+                            <div class="f-left">
+                                <div class="ui-checkbox">
+                                    <input type="checkbox" id="J_remember_username" name="remUser" class="ui-checkbox-normal" checked="">
+                                    <label for="J_remember_username" class="ui-checkbox-simulation"></label>
+                                </div>
+                                <label for="J_remember_username" class="u-checkbox-label">记住用户名</label>
+                            </div>
+                        </div>
+                        <div class="u-input-tip J_form_tip"><span class="text"></span></div>
+                    </div>
+                    <div class="control-group mb30 clearfix">
+                        <a  role="button" id="J_mobile_reg_button" class="ui-btn-large ui-btn-primary ui-btn-loading reg-form-btn form-submit">
+                            <span class="ui-btn-loading-after">
+                                <i class="ii-loading-gray-16x16">登陆</i>
+                            </span>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+            <div class="m-third-login" passport_mars_sead_hover="">
+                <p class="title">合作网站账号登录：</p>
+                <div class="clearfix">
+        
+                            <!-- <img src="../img/wx.jpg" target="_blank"class="u-third-sina"/>
+                            <img src="../img/xl.jpg" target="_blank" title="QQ" class="u-third-qq"/>
+                            <img src="../img/bdtb.jpg" target="_blank" title="支付宝" class="u-third-alipay"/>
+                            <img src="../img/qq.jpg" target="_blank" title="微信" class="u-third-wechat"/> -->
+                    <a href="javascript:void(0);" role="button" class="u-third-more" id="J_more_third_control">更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<div class="footer">
+		<div class="copyright">Copyright 2008-2018 vip.com，All Rights Reserved ICP证：粤 B2-20080329</div>
+</div>
+</body> 
+<script src = "libs/jquery-3.3.1.js"></script>
+<script>
+    $(function(){
+        console.log(1);
+        $(".mb30").on("click",function(){
+            //把登陆信息交给后台验证；
+            var username = $("#J_mobile_name").val();
+            var pwd = $("#J_mobile_pwd").val();
+            var opt = {
+                url:"http://localhost:8888/dest/user.php",
+                type:"POST",
+                data:{
+                    username:username,password:pwd,type:"login"}
+                }
+            // console.log(username,pwd,opt);
+             $.ajax(opt)
+             .then(function(res){
+                 console.log(res);
+             })
+        })
+
+
+
+    })
+</script>
+
+</html>

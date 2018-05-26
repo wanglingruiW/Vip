@@ -2743,420 +2743,514 @@ html {
               z-index: 1;
               width: 235px; }
 
-.index-content .s_bg_top {
-  width: 1920px;
-  height: 451px;
-  background: url(../img/bigbg.jpg) no-repeat; }
-  .index-content .s_bg_top .focus-banner-con-wrq {
-    padding: 12px;
-    padding-bottom: 0;
-    background: #fff;
-    background: rgba(255, 255, 255, 0.86);
-    width: 1146px;
-    position: relative;
+.index-content {
+  margin: 0 auto;
+  width: 1440px;
+  background: url(../img/ocean.jpg) no-repeat; }
+  .index-content:hover .fbc-btn-left {
+    left: 0; }
+  .index-content .s_bg_top {
+    overflow: hidden;
+    margin: 0 495px;
     margin: 0 auto;
-    box-shadow: 0 1px 3px rgba(167, 167, 167, 0.4); }
-    .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con {
-      width: 1146px;
-      height: 440px;
-      border-bottom: none;
+    width: 950px;
+    height: 451px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 10px; }
+    .index-content .s_bg_top .focus-banner-con-wrq {
+      margin: 12px auto;
+      width: 950px;
       position: relative;
-      overflow: hidden; }
-      .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con .fbc-list-item {
-        margin-top: 5px;
-        width: 400px;
-        width: 1146px;
-        height: 401px;
-        z-index: 2;
-        opacity: 1; }
-
-.index-content .wrap {
-  position: relative;
-  padding: 15px 0 0;
-  overflow: hidden;
-  width: auto;
-  margin: 0 auto; }
-  .index-content .wrap #J-hotSale-floor {
-    margin-bottom: 30px;
-    width: 1170px;
-    margin: 0 auto 70px;
-    position: relative; }
-    .index-content .wrap #J-hotSale-floor .shop-title {
-      margin-bottom: 20px;
-      overflow: hidden;
-      position: relative;
-      height: 68px; }
-      .index-content .wrap #J-hotSale-floor .shop-title .coundown-img {
-        position: absolute;
-        left: 50%;
-        margin-left: -585px;
-        top: 0; }
-    .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap {
-      margin-left: 80px;
-      padding-bottom: 20px;
-      background-color: #fff; }
-      .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap .index-zhuanshu-wrap-inner {
-        overflow: hidden;
-        margin: 0 auto; }
-        .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap .index-zhuanshu-wrap-inner .index-zhuanshu-box-wrap {
-          width: 1020px; }
-          .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap .index-zhuanshu-wrap-inner .index-zhuanshu-box-wrap .index-zhuanshu-box {
-            position: relative;
-            float: left;
-            overflow: hidden;
-            width: 320px;
-            height: 199px;
-            margin-right: 20px; }
-            .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap .index-zhuanshu-wrap-inner .index-zhuanshu-box-wrap .index-zhuanshu-box img {
-              width: 320px;
-              height: 199px; }
-    .index-content .wrap #J-hotSale-floor .brand-wrap {
-      margin-left: 85px;
-      border-bottom: 0 none;
-      width: 1020px;
-      color: #333;
-      height: 900px;
-      -webkit-font-smoothing: antialiased; }
-      .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item {
-        float: left;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        width: 490px;
-        height: 300px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        background: #fff;
-        background: url(../img/dongt1.jpg) no-repeat; }
-        .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item:hover .hotSale-hover {
-          opacity: 1; }
-        .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-info {
-          position: absolute;
-          bottom: 20px;
-          width: 320px;
-          height: 100px;
-          left: 50%;
-          margin-left: -160px;
-          background: #fff;
-          background: rgba(255, 255, 255, 0.9);
-          border-radius: 4px;
-          line-height: 1.2; }
-          .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-info .hotSale-logo-img {
-            width: 100px;
-            height: 50px;
-            margin: 6px 0 3px; }
-          .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-info .hotSale-name {
-            font-size: 14px;
-            color: #333;
-            font-weight: 700;
-            margin: 0 55px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap; }
-          .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-info .hotSale-pms {
-            margin: 0 55px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap; }
-        .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover {
-          pointer-events: none;
-          opacity: 0;
-          width: 450px;
-          height: 260px;
-          position: absolute;
-          top: 20px;
-          left: 20px;
-          background-color: #fff;
-          background-position: center 100px;
-          border-radius: 4px;
-          overflow: hidden;
-          filter: alpha(opacity=1); }
-          .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .hotSale-pro-list {
-            margin-top: 14px;
-            padding-left: 10px;
-            height: 184px;
-            border-bottom: 1px dotted #333; }
-            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .hotSale-pro-list .hotSale-pro-item {
-              float: left;
-              margin-right: 16px;
-              width: 121px;
-              height: 153px; }
-          .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .hotSale-logo-img {
-            float: left; }
-            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .hotSale-logo-img img {
-              width: 120px;
-              height: 40px;
-              margin-left: 29px;
-              margin-right: 20px; }
-          .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav {
-            display: block;
-            float: left;
-            margin-top: 10px;
-            height: 22px;
-            line-height: 22px;
-            margin-right: 63px;
-            cursor: pointer; }
-            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .ui-btn-fav-like {
-              width: 71px;
-              padding: 0 6px;
-              background: #fff;
-              border: 1px solid #ededed;
-              line-height: 18px;
-              border-radius: 12px;
-              color: #666; }
-              .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .ui-btn-fav-like:hover {
-                background: #f10582; }
-              .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .ui-btn-fav-like .vipFont {
-                margin-top: 2px;
-                line-height: 1;
-                display: inline-block;
-                color: #f10582;
-                vertical-align: top; }
-              .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .ui-btn-fav-like .fav-hidden {
-                line-height: 20px;
-                display: inline-block;
-                vertical-align: top; }
-            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .enter-btn {
-              display: none;
-              margin-top: 18px;
-              position: absolute;
-              right: 30px;
-              bottom: 20px;
-              width: 117px;
-              height: 22px;
-              border: 1px solid #333;
-              color: #333;
-              text-align: center;
-              line-height: 22px;
-              background: #fff;
-              border-radius: 2px;
-              font-size: 14px;
-              cursor: pointer; }
-  .index-content .wrap #J-index-floor1 {
-    width: 1000px;
-    margin: 0 auto 70px; }
-    .index-content .wrap #J-index-floor1 .shop-sort-title {
-      margin-bottom: 20px;
-      min-height: 43px;
-      border-bottom: 1px #1a1a1a solid;
-      position: relative; }
-      .index-content .wrap #J-index-floor1 .shop-sort-title img {
-        width: 273px;
-        height: 43px;
-        margin-bottom: -5px; }
-      .index-content .wrap #J-index-floor1 .shop-sort-title .shop-all-btn {
-        position: absolute;
-        right: 0;
-        bottom: 5px;
-        font-size: 14px;
-        color: #333;
-        _top: 0; }
-    .index-content .wrap #J-index-floor1 .J_indexFloorInner_cms {
-      height: 131px; }
-      .index-content .wrap #J-index-floor1 .J_indexFloorInner_cms .floors-operation {
-        width: 1000px;
-        margin: 0 auto;
-        overflow: hidden;
-        padding-bottom: 20px;
-        height: 111px; }
-        .index-content .wrap #J-index-floor1 .J_indexFloorInner_cms .floors-operation img {
-          width: 1000px;
-          height: 111px; }
-    .index-content .wrap #J-index-floor1 #J-floorBrandList-1 {
-      width: 1020px;
-      height: 22125px; }
-      .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data {
-        height: 5310px;
-        width: 1020px; }
-        .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page {
-          height: 1770px; }
-          .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page img {
-            width: 1000px;
-            height: 1000px; }
-          .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item {
-            margin-top: 30px;
-            float: left;
-            display: inline-block;
-            vertical-align: top;
-            position: relative;
-            z-index: 1;
-            margin-right: 20px;
-            margin-bottom: 20px;
-            width: 490px;
-            height: 290px;
-            background: #fff; }
-            .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-img {
-              width: 490px;
-              height: 235px; }
-            .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .pms-info {
-              position: absolute;
-              top: 205px;
-              left: 0;
-              background: #000;
-              background: rgba(0, 0, 0, 0.6);
-              height: 30px;
-              line-height: 30px;
-              width: 365px;
-              padding: 0 100px 0 25px;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              color: #fff;
-              filter: alpha(opacity=60); }
-            .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info {
-              position: relative;
-              padding: 0 120px 0 10px;
-              height: 40px;
-              line-height: 40px;
-              background-color: #fff; }
-              .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-discount {
-                color: #4d4d4d;
-                margin-right: 10px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                max-width: 100px;
-                _width: 100px;
-                display: inline-block; }
-                .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-discount .salebg2 {
-                  font-size: 24px;
-                  color: #f10582;
-                  margin-right: 3px;
-                  font-weight: 700; }
-              .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-name {
-                cursor: pointer;
-                font-size: 14px;
-                color: #4d4d4d;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                width: 230px;
-                display: inline-block;
-                _width: 230px; }
-              .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-time {
-                position: absolute;
-                right: 20px;
-                bottom: 0;
-                padding-top: 12px;
-                padding-bottom: 12px;
-                height: 16px;
-                line-height: 16px;
-                color: #4d4d4d;
-                white-space: nowrap; }
-                .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-time .time-icon {
-                  margin-right: 5px;
-                  width: 16px;
-                  height: 16px;
-                  background: url(//shop.vipstatic.com/img/te/index_v4/index_imgs-hash-1724ef6c.png?6a0a0bab) no-repeat -50px 0;
-                  display: inline-block;
-                  vertical-align: top; }
-                .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-time span {
-                  display: inline-block;
-                  vertical-align: top; }
-    .index-content .wrap #J-index-floor1 .shop-sort-ft {
-      border-top: 1px solid #e8e8e8;
-      width: 1000px;
-      height: 43px; }
-      .index-content .wrap #J-index-floor1 .shop-sort-ft .shop-more-btn {
-        width: 324px;
-        display: block;
-        color: #fff;
-        height: 44px;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-        font-size: 16px;
-        text-align: center;
-        line-height: 44px;
-        margin: -1px auto 20px; }
-        .index-content .wrap #J-index-floor1 .shop-sort-ft .shop-more-btn:hover {
-          background-color: #f43499; }
-  .index-content .wrap .J_indexFloorBetween_cms {
-    height: 520px; }
-    .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap {
-      padding-top: 40px;
-      height: 410px;
-      margin-bottom: 70px;
-      background: url(../img/fashion_bg.jpg) no-repeat center top; }
-      .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner {
-        display: block;
-        width: 672px;
-        height: 410px;
-        margin: 0 auto;
-        background: #f7f3ef;
+      box-shadow: 0 1px 3px rgba(167, 167, 167, 0.4); }
+      .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con {
+        width: 950px;
+        height: 440px;
+        border-bottom: none;
         position: relative;
         overflow: hidden; }
-        .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner img {
+        .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con:hover .fbc-btn-left {
+          left: 0; }
+        .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con:hover .fbc-btn-right {
+          right: 0; }
+        .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con .fbc-list {
+          height: 400px;
+          width: 5000px;
+          position: relative; }
+          .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con .fbc-list .fbc-list-item {
+            float: left;
+            margin-left: 5px;
+            margin-top: 10px;
+            height: 400px;
+            width: 980px;
+            height: 380px;
+            z-index: 2;
+            opacity: 1; }
+            .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con .fbc-list .fbc-list-item img {
+              height: 380px;
+              width: 980px; }
+        .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con .fbc-btn {
+          width: 33px;
+          height: 66px;
+          background: rgba(0, 0, 0, 0.2);
+          border-radius: 2px;
+          position: absolute;
+          width: 33px;
+          height: 66px;
+          line-height: 66px;
+          font-size: 24px;
+          cursor: pointer;
+          top: 50%;
+          margin-top: -53px;
+          z-index: 2;
+          text-align: center;
+          -webkit-transition: all .3s ease-in; }
+          .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con .fbc-btn .i-hv {
+            font-size: 20px;
+            color: #fff;
+            opacity: .5;
+            font-weight: lighter;
+            font-family: vipFont;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none; }
+        .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con .fbc-btn-left {
+          left: -33px;
+          border-radius: 3px; }
+        .index-content .s_bg_top .focus-banner-con-wrq .focus-banner-con .fbc-btn-right {
+          right: -33px;
+          border-radius: 3px; }
+    .index-content .s_bg_top .fbc-trigger {
+      width: 980px;
+      margin-left: -573px;
+      height: 20px;
+      position: absolute;
+      z-index: 2;
+      bottom: 20px;
+      text-align: center;
+      margin: 0 auto; }
+      .index-content .s_bg_top .fbc-trigger .fbc-trigger-con {
+        margin: 0px;
+        width: 100%;
+        height: 20px;
+        text-align: center; }
+        .index-content .s_bg_top .fbc-trigger .fbc-trigger-con:hover fbc-btn-left {
+          left: 0; }
+        .index-content .s_bg_top .fbc-trigger .fbc-trigger-con li {
+          font-family: tohama;
+          font-size: 10px;
+          color: #e8e8e8;
+          position: absolute;
+          right: 0;
+          width: 180px;
+          display: inline-block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          height: 20px;
+          font: 12px 'microsoft Yahei';
+          color: #666;
+          cursor: pointer;
+          border-bottom: transparent 3px solid;
+          position: relative; }
+      .index-content .s_bg_top .fbc-trigger .fbc-trigger-line {
+        background-color: #e6057d;
+        position: absolute;
+        bottom: -3px;
+        height: 3px;
+        width: 180px;
+        left: 122px; }
+  .index-content .wrap {
+    position: relative;
+    padding: 15px 0 0;
+    overflow: hidden;
+    width: auto;
+    margin: 0 auto; }
+    .index-content .wrap #J-hotSale-floor {
+      margin-bottom: 30px;
+      width: 1170px;
+      margin: 0 auto 70px;
+      position: relative; }
+      .index-content .wrap #J-hotSale-floor .shop-title {
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        height: 68px; }
+        .index-content .wrap #J-hotSale-floor .shop-title .coundown-img {
+          position: absolute;
+          left: 50%;
+          margin-left: -585px;
+          top: 0; }
+      .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap {
+        margin-left: 80px;
+        padding-bottom: 20px;
+        background-color: #fff; }
+        .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap .index-zhuanshu-wrap-inner {
+          overflow: hidden;
+          margin: 0 auto; }
+          .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap .index-zhuanshu-wrap-inner .index-zhuanshu-box-wrap {
+            width: 1020px; }
+            .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap .index-zhuanshu-wrap-inner .index-zhuanshu-box-wrap .index-zhuanshu-box {
+              position: relative;
+              float: left;
+              overflow: hidden;
+              width: 320px;
+              height: 199px;
+              margin-right: 20px; }
+              .index-content .wrap #J-hotSale-floor .index-zhuanshu-wrap .index-zhuanshu-wrap-inner .index-zhuanshu-box-wrap .index-zhuanshu-box img {
+                width: 320px;
+                height: 199px; }
+      .index-content .wrap #J-hotSale-floor .brand-wrap {
+        position: relative;
+        margin-left: 85px;
+        border-bottom: 0 none;
+        width: 1020px;
+        color: #333;
+        height: 900px;
+        -webkit-font-smoothing: antialiased; }
+        .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item {
+          float: left;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          width: 490px;
+          height: 300px;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          background: #fff;
+          background: url(../img/dongt1.jpg) no-repeat; }
+          .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item:hover .hotSale-hover {
+            opacity: 1; }
+          .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-info {
+            position: absolute;
+            bottom: 20px;
+            width: 320px;
+            height: 100px;
+            left: 50%;
+            margin-left: -160px;
+            background: #fff;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 4px;
+            line-height: 1.2; }
+            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-info .hotSale-logo-img {
+              width: 100px;
+              height: 50px;
+              margin: 6px 0 3px; }
+            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-info .hotSale-name {
+              font-size: 14px;
+              color: #333;
+              font-weight: 700;
+              margin: 0 55px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-info .hotSale-pms {
+              margin: 0 55px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+          .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover {
+            pointer-events: none;
+            opacity: 0;
+            width: 450px;
+            height: 260px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #fff;
+            background-position: center 100px;
+            border-radius: 4px;
+            overflow: hidden;
+            filter: alpha(opacity=1); }
+            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .hotSale-pro-list {
+              margin-top: 14px;
+              padding-left: 10px;
+              height: 184px;
+              border-bottom: 1px dotted #333; }
+              .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .hotSale-pro-list .hotSale-pro-item {
+                float: left;
+                margin-right: 16px;
+                width: 121px;
+                height: 153px; }
+            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .hotSale-logo-img {
+              float: left; }
+              .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .hotSale-logo-img img {
+                width: 120px;
+                height: 40px;
+                margin-left: 29px;
+                margin-right: 20px; }
+            .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav {
+              display: block;
+              float: left;
+              margin-top: 10px;
+              height: 22px;
+              line-height: 22px;
+              margin-right: 63px;
+              cursor: pointer; }
+              .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .ui-btn-fav-like {
+                width: 71px;
+                padding: 0 6px;
+                background: #fff;
+                border: 1px solid #ededed;
+                line-height: 18px;
+                border-radius: 12px;
+                color: #666; }
+                .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .ui-btn-fav-like:hover {
+                  background: #f10582; }
+                .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .ui-btn-fav-like .vipFont {
+                  margin-top: 2px;
+                  line-height: 1;
+                  display: inline-block;
+                  color: #f10582;
+                  vertical-align: top; }
+                .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .ui-btn-fav-like .fav-hidden {
+                  line-height: 20px;
+                  display: inline-block;
+                  vertical-align: top; }
+              .index-content .wrap #J-hotSale-floor .brand-wrap .hotSale-item .hotSale-hover .ui-btn-fav .enter-btn {
+                display: none;
+                margin-top: 18px;
+                position: absolute;
+                right: 30px;
+                bottom: 20px;
+                width: 117px;
+                height: 22px;
+                border: 1px solid #333;
+                color: #333;
+                text-align: center;
+                line-height: 22px;
+                background: #fff;
+                border-radius: 2px;
+                font-size: 14px;
+                cursor: pointer; }
+    .index-content .wrap #J-index-floor1 {
+      width: 1000px;
+      margin: 0 auto 70px; }
+      .index-content .wrap #J-index-floor1 .shop-sort-title {
+        margin-bottom: 20px;
+        min-height: 43px;
+        border-bottom: 1px #1a1a1a solid;
+        position: relative; }
+        .index-content .wrap #J-index-floor1 .shop-sort-title img {
+          width: 273px;
+          height: 43px;
+          margin-bottom: -5px; }
+        .index-content .wrap #J-index-floor1 .shop-sort-title .shop-all-btn {
+          position: absolute;
+          right: 0;
+          bottom: 5px;
+          font-size: 14px;
+          color: #333;
+          _top: 0; }
+      .index-content .wrap #J-index-floor1 .J_indexFloorInner_cms {
+        height: 131px; }
+        .index-content .wrap #J-index-floor1 .J_indexFloorInner_cms .floors-operation {
+          width: 1000px;
+          margin: 0 auto;
+          overflow: hidden;
+          padding-bottom: 20px;
+          height: 111px; }
+          .index-content .wrap #J-index-floor1 .J_indexFloorInner_cms .floors-operation img {
+            width: 1000px;
+            height: 111px; }
+      .index-content .wrap #J-index-floor1 #J-floorBrandList-1 {
+        width: 1020px;
+        height: 22125px; }
+        .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data {
+          height: 5310px;
+          width: 1020px; }
+          .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page {
+            height: 1770px; }
+            .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page img {
+              width: 1000px;
+              height: 1000px; }
+            .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item {
+              margin-top: 30px;
+              float: left;
+              display: inline-block;
+              vertical-align: top;
+              position: relative;
+              z-index: 1;
+              margin-right: 20px;
+              margin-bottom: 20px;
+              width: 490px;
+              height: 290px;
+              background: #fff; }
+              .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-img {
+                width: 490px;
+                height: 235px; }
+              .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .pms-info {
+                position: absolute;
+                top: 205px;
+                left: 0;
+                background: #000;
+                background: rgba(0, 0, 0, 0.6);
+                height: 30px;
+                line-height: 30px;
+                width: 365px;
+                padding: 0 100px 0 25px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #fff;
+                filter: alpha(opacity=60); }
+              .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info {
+                position: relative;
+                padding: 0 120px 0 10px;
+                height: 40px;
+                line-height: 40px;
+                background-color: #fff; }
+                .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-discount {
+                  color: #4d4d4d;
+                  margin-right: 10px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  max-width: 100px;
+                  _width: 100px;
+                  display: inline-block; }
+                  .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-discount .salebg2 {
+                    font-size: 24px;
+                    color: #f10582;
+                    margin-right: 3px;
+                    font-weight: 700; }
+                .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-name {
+                  cursor: pointer;
+                  font-size: 14px;
+                  color: #4d4d4d;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  width: 230px;
+                  display: inline-block;
+                  _width: 230px; }
+                .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-time {
+                  position: absolute;
+                  right: 20px;
+                  bottom: 0;
+                  padding-top: 12px;
+                  padding-bottom: 12px;
+                  height: 16px;
+                  line-height: 16px;
+                  color: #4d4d4d;
+                  white-space: nowrap; }
+                  .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-time .time-icon {
+                    margin-right: 5px;
+                    width: 16px;
+                    height: 16px;
+                    background: url(//shop.vipstatic.com/img/te/index_v4/index_imgs-hash-1724ef6c.png?6a0a0bab) no-repeat -50px 0;
+                    display: inline-block;
+                    vertical-align: top; }
+                  .index-content .wrap #J-index-floor1 #J-floorBrandList-1 .J-brand-item-data .J-brand-item-page .brand-item .brand-info .brand-time span {
+                    display: inline-block;
+                    vertical-align: top; }
+      .index-content .wrap #J-index-floor1 .shop-sort-ft {
+        border-top: 1px solid #e8e8e8;
+        width: 1000px;
+        height: 43px; }
+        .index-content .wrap #J-index-floor1 .shop-sort-ft .shop-more-btn {
+          width: 324px;
+          display: block;
+          color: #fff;
+          height: 44px;
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+          font-size: 16px;
+          text-align: center;
+          line-height: 44px;
+          margin: -1px auto 20px; }
+          .index-content .wrap #J-index-floor1 .shop-sort-ft .shop-more-btn:hover {
+            background-color: #f43499; }
+    .index-content .wrap .J_indexFloorBetween_cms {
+      height: 520px; }
+      .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap {
+        padding-top: 40px;
+        height: 410px;
+        margin-bottom: 70px;
+        background: url(../img/fashion_bg.jpg) no-repeat center top; }
+        .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner {
+          display: block;
           width: 672px;
           height: 410px;
           margin: 0 auto;
-          cursor: pointer;
-          transition: all 0.6s; }
-          .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner img:hover {
-            transform: scale(1.4); }
-        .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner .fashion-con-wrap {
-          width: 325px;
-          height: 155px;
-          background-color: rgba(0, 0, 0, 0.85);
-          position: absolute;
-          left: 50%;
-          bottom: 20px;
-          margin-left: -162px;
-          cursor: pointer; }
-          .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner .fashion-con-wrap .fashion-logo {
-            margin: 16px 0 10px;
-            height: 47px;
-            background: url(../img/viplux.png) no-repeat center;
+          background: #f7f3ef;
+          position: relative;
+          overflow: hidden; }
+          .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner img {
+            width: 672px;
+            height: 410px;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: all 0.6s; }
+            .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner img:hover {
+              transform: scale(1.4); }
+          .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner .fashion-con-wrap {
+            width: 325px;
+            height: 155px;
+            background-color: rgba(0, 0, 0, 0.85);
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            margin-left: -162px;
             cursor: pointer; }
-          .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner .fashion-con-wrap .fashion-text {
-            font-size: 22px;
-            color: #c89f60;
-            text-align: center;
-            margin-bottom: 3px;
-            cursor: pointer; }
-  .index-content .wrap .J-brand-wrap {
-    margin-left: 80px;
-    width: 1170px;
-    height: 1150px;
-    margin: 0 auto; }
-    .index-content .wrap .J-brand-wrap #msjl {
-      width: 1000px;
-      margin-left: 80px; }
-  .index-content .wrap .index-nav-sort {
-    margin-left: -696px;
-    position: fixed;
-    top: 112px;
-    width: 78px;
-    height: 456px;
-    left: 50%;
-    margin-left: -612px;
-    top: 100px;
-    background: #fff;
-    z-index: 100; }
-    .index-content .wrap .index-nav-sort .index-nav-wrap {
-      border: 1px solid #d6d6d6;
-      border-radius: 3px;
-      height: 454px; }
-      .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list {
-        padding: 5px 7px 0;
-        margin-bottom: 5px;
-        width: 62px;
-        height: 444px; }
-        .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list .index-nav-item {
-          display: block;
-          padding: 8px 0px;
-          height: 20px;
-          border-bottom: 1px solid #eaeaea;
-          color: #666; }
-          .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list .index-nav-item:hover {
-            background: rgba(226, 90, 181, 0.533); }
-          .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list .index-nav-item .nav-icon {
-            margin-right: 6px;
-            width: 20px;
+            .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner .fashion-con-wrap .fashion-logo {
+              margin: 16px 0 10px;
+              height: 47px;
+              background: url(../img/viplux.png) no-repeat center;
+              cursor: pointer; }
+            .index-content .wrap .J_indexFloorBetween_cms .fashion-wrap .fashion-inner .fashion-con-wrap .fashion-text {
+              font-size: 22px;
+              color: #c89f60;
+              text-align: center;
+              margin-bottom: 3px;
+              cursor: pointer; }
+    .index-content .wrap .J-brand-wrap {
+      margin-left: 80px;
+      width: 1170px;
+      height: 1150px;
+      margin: 0 auto; }
+      .index-content .wrap .J-brand-wrap #msjl {
+        width: 1000px;
+        margin-left: 80px; }
+    .index-content .wrap .index-nav-sort {
+      margin-left: -696px;
+      position: fixed;
+      top: 112px;
+      width: 78px;
+      height: 456px;
+      left: 50%;
+      margin-left: -612px;
+      top: 100px;
+      background: #fff;
+      z-index: 100; }
+      .index-content .wrap .index-nav-sort .index-nav-wrap {
+        border: 1px solid #d6d6d6;
+        border-radius: 3px;
+        height: 454px; }
+        .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list {
+          padding: 5px 7px 0;
+          margin-bottom: 5px;
+          width: 62px;
+          height: 444px; }
+          .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list .index-nav-item {
+            display: block;
+            padding: 8px 0px;
             height: 20px;
-            color: #949494; }
-          .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list .index-nav-item .nav-title {
-            line-height: 20px;
-            white-space: nowrap;
-            display: inline-block;
-            vertical-align: top;
-            cursor: pointer; }
+            border-bottom: 1px solid #eaeaea;
+            color: #666; }
+            .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list .index-nav-item:hover {
+              background: rgba(226, 90, 181, 0.533); }
+            .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list .index-nav-item .nav-icon {
+              margin-right: 6px;
+              width: 20px;
+              height: 20px;
+              color: #949494; }
+            .index-content .wrap .index-nav-sort .index-nav-wrap .index-nav-list .index-nav-item .nav-title {
+              line-height: 20px;
+              white-space: nowrap;
+              display: inline-block;
+              vertical-align: top;
+              cursor: pointer; }
